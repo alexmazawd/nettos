@@ -47,8 +47,6 @@ class mdlLogin extends Singleton
                 }else{
 
                     $_SESSION['info'] = 'logged';
-
-
                 }
 
 
@@ -59,7 +57,6 @@ class mdlLogin extends Singleton
 
 
             $val->addRules($rules);
-
             $val->run($toValidate);
 
             if ($val->isValid()) {
