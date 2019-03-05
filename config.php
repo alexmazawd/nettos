@@ -7,7 +7,7 @@ define('VISTAS_PATH', PAGE_PATH.'/mvc/vista/');
 // MYSQL
 const MYSQL_CONFIG = array(
     'database_type' => 'mysql',
-    'database_name' => 'mispruebas',
+    'database_name' => 'nettos',
     'server' => 'localhost',
     'username' => 'root',
     'password' => '',
