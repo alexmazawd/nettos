@@ -55,6 +55,12 @@
             <span>{{war-apellidos}}</span>
             <br>
             <br>
+            <label class=" {{class-fecha_nac}}" for="fecha_nac">Fecha de nacimiento</label>
+            <input type="date" id="fecha_nac" name="fecha_nac"
+                   value='<?php echo $val->restoreValue('fecha_nac'); ?>' >
+            <span>{{war-fecha_nac}}</span>
+            <br>
+            <br>
             <label class=" {{class-codigo}}" for="codigo">Codigo de invitacion</label>
             <input type="text" id="codigo" name="codigo"
                    value='<?php echo $val->restoreValue('codigo');?>'>
