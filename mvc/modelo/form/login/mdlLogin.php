@@ -34,7 +34,7 @@ class mdlLogin extends Singleton
 
             $_SESSION['info'] = 'nologged';
 
-            $datos = login::searchUsuarioDB($usuario);
+            $datos = usuarios::searchUsuarioDB($usuario);
 
             if ($datos) {
 
