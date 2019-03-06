@@ -38,6 +38,8 @@ class mdlRegistro extends Singleton
 
             'apellidos' => 'required|alpha_space',
 
+            'fecha_nac' => 'required',
+
             'codigo' => 'required|invitacion'
 
         );
@@ -45,7 +47,7 @@ class mdlRegistro extends Singleton
 
 // Verificamos si existe el usuario
 
-        if (login::duplicateUsuario($usuario)) {
+        if (usuarios::duplicateUsuario($usuario)) {
 
             $val->setExists(true);
 
@@ -59,7 +61,7 @@ class mdlRegistro extends Singleton
 
         $codigoDeInvitacion = getPost('codigo');
 
-        $invitacion = falso_codigo::searchCodigoInvitacionDB($codigoDeInvitacion);
+        $invitacion = codigos::searchCodigoInvitacionDB($codigoDeInvitacion);
 
         if (!$invitacion) { //si lo que me devuelve search codigo es null o 0 es por que no existe el codigo asi que pongo la rule a true para crear el error
 
@@ -82,21 +84,24 @@ class mdlRegistro extends Singleton
 
                 $data['clave'] = encodePassword($data['clave']);
 
-                $datos = login::insertDB($data);
+                $datos = usuarios::insertDB($data);
 
                 if ($datos) {
 
                     $_SESSION['info'] = 'registed';
 
-                    falso_codigo::removeDB($invitacion);
+                    codigos::removeDB($invitacion);
 
-                } else
+                    redirectTo('index.php?pagina=registroExitoso');
+
+                } else{
 
                     $_SESSION['info'] = 'noRegisted';
 
-                // Cambiamos el paso
+                redirectTo('index.php?pagina=registrofailed');
+            }
 
-                redirectTo('index.php?pagina=registroExitoso');
+                // Cambiamos el paso
 
             }
 
