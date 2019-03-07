@@ -21,7 +21,7 @@
             padding: 0.2em;
         }
 
-        .hide{
+        .hide {
 
             display: none;
 
@@ -58,68 +58,26 @@
 
         <br>
 
-        <div id="restoForm" class="hide">
+        <label for="log">Mantener sesion iniciada</label>
 
-        <label class="{{class-clave2}}" for="clave2">Clave2</label>
+        <input type="checkbox" id="log" name="log"
 
-        <input type="text" id="clave2" name="clave2"
-
-               value='<?php echo $val->restoreValue('clave2'); ?>'>
-
-        <span>{{war-clave2}}</span>
+               value='<?php echo $val->restoreCheckboxes('log',true); ?>'>
 
         <br>
 
-        <br>
+</div>
 
-        <label class="{{class-nombre}}" for="nombre">nombre</label>
+<br>
 
-        <input type="text" id="nombre" name="nombre"
+<button type="submit" id="enviarForm" name="login">Login</i></button>
 
-               value='<?php echo $val->restoreValue('nombre'); ?>'>
+<br>
 
-        <span>{{war-nombre}}</span>
-
-        <br>
-
-        <br>
-
-        <label class="{{class-apellidos}}" for="apellidos">apellidos</label>
-
-        <input type="text" id="apellidos" name="apellidos"
-
-               value='<?php echo $val->restoreValue('apellidos'); ?>'>
-
-        <span>{{war-apellidos}}</span>
-
-        <br>
-
-        <br>
-
-        <label class="{{class-codigo}}" for="codigo">Codigo de Invitacion</label>
-
-        <input type="text" id="codigo" name="codigo"
-
-               value='<?php echo $val->restoreValue('codigo'); ?>'>
-
-        <span>{{war-codigo}}</span>
-
-        <br>
-
-        <button type="submit" name="registro">Registrarse</i></button>
-
-        </div>
-
-        <br>
-
-        <button type="submit" id="enviarForm" name="login">Login</i></button>
-
-        <br>
-
-        <button type="button" onclick="location.href='?pagina=registro';">Registro</i></button>
+<button type="button" onclick="location.href='?pagina=registro';">Registro</i></button>
 
 
-    </form>
+</form>
 
 </div>
 
