@@ -8,6 +8,7 @@ class mdlLogin extends Singleton
 
     public function onGestionPagina()
     {
+
         if (getGet('pagina') != self::PAGE) return;
 
         // Validamos
@@ -21,12 +22,18 @@ class mdlLogin extends Singleton
         $rules = array(
             'usuario' => 'required|number_alpha|user_no_exists',
 
-            'clave' => 'required|number_alpha'
+            'clave' => 'required|number_alpha',
+
+            'log' => ''
+
+            //Validacion, campos usuario y clave requeridos y pueden contener numeros y letras
+
+            //user_no_exists rule que genera el error en caso de que el usuario con el que se intenta iniciar sesion no existe
 
         );
 
 
-        if (!is_null(getPost(self::PAGE))) {
+        if (!is_null(getPost(self::PAGE))) {  //una vez que se envia el formulario se entra en este if
 
             $usuario = getPost('usuario');
 
@@ -34,35 +41,52 @@ class mdlLogin extends Singleton
 
             $_SESSION['info'] = 'nologged';
 
-            $datos = login::searchUsuarioDB($usuario);
+            $datos = usuarios::searchUsuarioDB($usuario); //se recupera el hash con el que se hace la comprobacion de la clave
 
-            if ($datos) {
+            if ($datos) { //si $datos estuviera vacio significaria que el usuario no existe o no tiene clave
 
                 /*   $message = "wrong answer";
                    echo "<script type='text/javascript'>alert('$message');</script>";*/
 
-                if (!password_verify($clave, $datos)) {
+                if (!password_verify($clave, $datos)) { //comprueba que la clave no sea incorrecta, de ser asi genera el error
 
                     $val->setNoExists(true);
-                }else{
+
+                }else{ //si entra en este else, es que la clave esta bien
 
                     $_SESSION['info'] = 'logged';
+
+                    //iguala info a logged, que es la variable con la que comprobaremos en el resto de paginas si esta o no iniciada la sesion
+
+                    if (isset($_POST['log'])) { //si el usuario ha marcado la checkbox de mantener sesion iniciada
+
+                        $id = usuarios::searchIdDB($usuario);
+
+                        setcookie('logged', $id, time()+1800); //se crea una cookie que ademas de usarse para comprobar si la sesion ya esta iniciada
+
+                        //contendra el id del usuario que es lo que usaremos para recuperar sus datos en otras paginas del sitio
+
+                    }
+
                 }
 
 
-            }else{
+            }else{ //el usuario no existe
 
                 $val->setNoExists(true);
             }
 
 
-            $val->addRules($rules);
-            $val->run($toValidate);
+            $val->addRules($rules); //se agregan las rules a validacion
+            $val->run($toValidate); //se comprueban
 
-            if ($val->isValid()) {
-
+            if ($val->isValid()) { //entrar en este if significa que no hay ningun tipo de error y que todo esta bien asi que se redirige
                 $_SESSION[self::PAGE] = $val->getOks();
+                redirectTo('index.php?pagina=exitoso');
+            }
+        }else{ //en este else se entrara la primera vez que entremos en login, comprobara si la cookie logged existe y de ser asi te envia automaticamente al inicio
 
+            if (isset($_COOKIE['logged'])){
                 redirectTo('index.php?pagina=exitoso');
             }
         }
