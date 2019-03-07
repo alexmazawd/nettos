@@ -58,6 +58,20 @@ class usuarios
         return $datos;
 
     }
+    public static function searchIdDB($usuario)
+    {
+
+        $database = medoo::getInstance();
+
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->select('usuarios', 'id_usuario', ["usuario[=]" => $usuario]);
+
+        $database->closeConnection();
+
+        return $datos[0];
+
+    }
 
     public static function insertDB($data)
 
