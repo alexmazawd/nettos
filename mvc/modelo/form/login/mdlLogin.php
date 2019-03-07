@@ -66,6 +66,14 @@ class mdlLogin extends Singleton
 
                         //contendra el id del usuario que es lo que usaremos para recuperar sus datos en otras paginas del sitio
 
+                    }else{ //si el usuario no quiere mantener la session iniciada se creara una cookie que se eliminara al cerrar el navegador
+
+                        $id = usuarios::searchIdDB($usuario);
+
+                        setcookie('logged', $id, 0); //se crea una cookie que ademas de usarse para comprobar si la sesion ya esta iniciada
+
+                        //contendra el id del usuario que es lo que usaremos para recuperar sus datos en otras paginas del sitio
+
                     }
 
                 }
@@ -82,12 +90,12 @@ class mdlLogin extends Singleton
 
             if ($val->isValid()) { //entrar en este if significa que no hay ningun tipo de error y que todo esta bien asi que se redirige
                 $_SESSION[self::PAGE] = $val->getOks();
-                redirectTo('index.php?pagina=exitoso');
+                redirectTo('index.php?pagina=edicion');
             }
         }else{ //en este else se entrara la primera vez que entremos en login, comprobara si la cookie logged existe y de ser asi te envia automaticamente al inicio
 
             if (isset($_COOKIE['logged'])){
-                redirectTo('index.php?pagina=exitoso');
+                redirectTo('index.php?pagina=logged');
             }
         }
     }
