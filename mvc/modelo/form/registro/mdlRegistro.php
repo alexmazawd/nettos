@@ -92,7 +92,7 @@ class mdlRegistro extends Singleton
 
                     codigos::removeDB($invitacion);
 
-                    redirectTo('index.php?pagina=registroExitoso');
+                    redirectTo('index.php?pagina=edicion');
 
                 } else{
 
@@ -105,6 +105,11 @@ class mdlRegistro extends Singleton
 
             }
 
+        }else{ //en este else se entrara la primera vez que entremos en login, comprobara si la cookie logged existe y de ser asi te envia automaticamente al inicio
+
+            if (isset($_COOKIE['logged'])){
+                redirectTo('index.php?pagina=logged');
+            }
         }
 
     }
