@@ -38,7 +38,7 @@
             <br>
             <br>
             <label class=" {{class-bio}}" for="bio">Hablanos un poco sobre ti</label>
-            <textarea id="bio" name="bio"> <?php echo ($val->restoreValue('bio') ? $val->restoreValue('bio') : '' ) ?> </textarea>
+            <textarea id="bio" name="bio"><?php echo ($val->restoreValue('bio') ? $val->restoreValue('bio') : '') ?></textarea>
             <span>{{war-bio}}</span>
             <br>
             <br>
