@@ -54,6 +54,6 @@
     </form>
 </div>
 <br>
-<a href="inicio.html">Volver a Inicio</a>
+<a href="mvc/vista/inicio.html">Volver a Inicio</a>
 </body>
 </html>
