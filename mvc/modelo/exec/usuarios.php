@@ -58,6 +58,36 @@ class usuarios
         return $datos;
 
     }
+
+    public static function searchAllByIdDB($id)
+    {
+        $database = medoo::getInstance();
+        $database->openConnection(MYSQL_CONFIG);
+        $datos = $database->select('usuarios', '*', ["id_usuario[=]" => $id]);
+        $database->closeConnection();
+        return $datos;
+    }
+
+    public static function recuperarFoto($id)
+    {
+        $database = medoo::getInstance();
+        $database->openConnection(MYSQL_CONFIG);
+        $datos = $database->select('usuarios', 'foto', ["id_usuario[=]" => $id]);
+        $database->closeConnection();
+        return $datos;
+    }
+
+    public static function modifyDB($data, $id)
+    {
+        $database = medoo::getInstance();
+        $database->openConnection(MYSQL_CONFIG);
+        $datos = $database->update('usuarios', $data, ['id_usuario' => $id]);
+        $database->closeConnection();
+        return $datos;
+    }
+
+
+
     public static function searchIdDB($usuario)
     {
 
