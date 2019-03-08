@@ -79,13 +79,13 @@ class mdlEdicion extends Singleton
 
                 $datos = usuarios::modifyDB($data, $id); //se llama a la funcion que modifica
 
-                if ($datos) { //si se han modificado los datos correctamente se redirige a modExitosa
+                if ($datos) {
 
                     $_SESSION['mod'] = true;
 
                     redirectTo('index.php?pagina=modExitosa');
 
-                } else { //si no se han modificado correctamente se envia a una pagina ficticia llamada modfailed2
+                } else {
 
                     $_SESSION['mod'] = false;
 
