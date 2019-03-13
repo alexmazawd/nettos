@@ -28,7 +28,7 @@ function recuperarNettsUser() {
 
 // 3 - Configuro la conexión Ajax
 
-    http_request.open('POST', '../../ajax/cargaNettsUser.php', true);
+    http_request.open('POST', 'ajax/cargaNettsUser.php', true);
 
 //4 - Establezco una cabecera que permita al servidor saber que tiene que leer $_POST
 
@@ -74,12 +74,18 @@ function success(){
 
     var objeto_json = JSON.parse(respuesta_json);
 
-    let id_netts= objeto_json.listaNetts[0].id_nett;
+    if (objeto_json==null){
 
-    id_netts+= objeto_json.listaNetts[2].id_nett;
+        alert('no tienes ningun nett');
 
-    alert(id_netts);
+    } else {
 
+        let id_netts = objeto_json.listaNetts[0].id_nett;
+
+        id_netts += objeto_json.listaNetts[2].id_nett;
+
+        alert(id_netts);
+    }
 }
 
 /*
