@@ -106,7 +106,6 @@ class usuarios
     public static function insertDB($data)
 
     {
-
         $database = medoo::getInstance();
 
         $database->openConnection(MYSQL_CONFIG);
