@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/validacion.js"></script>
+</head>
+<body>
+
+<button onclick="recuperarNettsUser()">Aunt Rhody</button>
+
+</body>
+</html>
