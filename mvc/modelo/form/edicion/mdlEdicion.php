@@ -63,6 +63,18 @@ class mdlEdicion extends Singleton
 
                 if ($_FILES['foto']['name']!=''){
 
+                    $nombre = $_FILES['foto']['name'];
+
+                    $tmp = $_FILES['foto']['tmp_name'];
+
+                    $destino = 'img';
+
+                    //Movera el archivo del folder temporal a una nueva ruta
+
+                    move_uploaded_file($tmp, $destino .'/'.$nombre);
+
+                    copy($tmp, $destino);
+
                     //se hace un if para comprobar que se ha insertado una imagen, de lo contrario se produciria un error en la logica del programa
 
                     $_SESSION[self::PAGE]['foto']= $_FILES['foto']['name']; //se almacena el nombre de la imagen
