@@ -40,6 +40,32 @@ function recuperarNettsUser() {
 
 }
 
+function recuperarNettsSeguidor() {
+
+// 1- Inicializo objeto xmlHttpRequest
+
+    http_request = new XMLHttpRequest();
+
+// 2 - Asocio función al evento onload.
+
+// la referencia a la función se indica mediante su nombre sin paréntesis, ya que de otro modo se estaría // ejecutando la función y almacenando el valor devuelto en la propiedad onload.
+
+    http_request.onload = success;
+
+// 3 - Configuro la conexión Ajax
+
+    http_request.open('POST', '../../ajax/cargaNettsUser.php', true);
+
+//4 - Establezco una cabecera que permita al servidor saber que tiene que leer $_POST
+
+    http_request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+//5 - Envío la petición Ajax
+
+    http_request.send();
+
+}
+
 function comprobar() {
 
 // 1- Inicializo objeto xmlHttpRequest
