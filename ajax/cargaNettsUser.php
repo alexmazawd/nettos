@@ -2,6 +2,8 @@
 
 require_once "../include.php";
 
+$netts=null;
+
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 
     $id = $_COOKIE['logged'];
@@ -35,4 +37,4 @@ $objeto_json->listaNetts=$arrNetts;
 echo json_encode($objeto_json);
 
 //La funcion search Nett User devuelve un array asociativo
-// los arrays asociativos al codificarlos a json lo generan automaticamente
+//los arrays asociativos al codificarlos a json lo generan automaticamente
