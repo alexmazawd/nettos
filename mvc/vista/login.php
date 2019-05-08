@@ -32,7 +32,7 @@
 <body>
 <div>
     <form action="index.php?pagina=login" method="post">
-        <h1>ALTA DE SOCIOS</h1>
+        <h1>ALTA DE USUARIOS</h1>
         {{errores}}
 
         <label class="{{class-usuario}}" for="usuario">Nombre</label>

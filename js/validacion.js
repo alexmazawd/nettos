@@ -7,10 +7,7 @@ var http_request = null;
 function crearRegistrarse() {
 
     document.getElementById('enviarForm').classList.toggle('hide');
-
     document.getElementById('restoForm').classList.toggle('hide');
-
-
 }
 
 
