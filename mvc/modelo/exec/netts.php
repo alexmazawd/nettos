@@ -17,4 +17,57 @@ class netts{
         return $datos;
     }
 
+    public static function searchNettsSeguidor($id)
+    {
+        $database = medoo::getInstance();
+
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->select("netts",
+
+            ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"]],
+
+            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub"],
+
+            ["seguidores.id_usuario_seguidor[=]" => $id]
+            );
+
+        $database->closeConnection();
+
+        return $datos;
+    }
+
+
+    public static function insertDB($contenido,$id_usuario,$imagen=null)
+
+    {
+
+        $database = medoo::getInstance();
+
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->insert('netts', [
+
+            "id_usuario" => $id_usuario,
+
+            "contenido" => $contenido,
+
+            "imagen" => $imagen
+
+        ]);
+
+        $database->closeConnection();
+
+        if ($datos){
+
+            return true;
+
+        }else{
+
+            return false;
+
+        }
+
+    }
+
 }

@@ -7,14 +7,37 @@ var http_request = null;
 function crearRegistrarse() {
 
     document.getElementById('enviarForm').classList.toggle('hide');
-
     document.getElementById('restoForm').classList.toggle('hide');
-
-
 }
 
 
 function recuperarNettsUser() {
+
+// 1- Inicializo objeto xmlHttpRequest
+
+    http_request = new XMLHttpRequest();
+
+// 2 - Asocio función al evento onload.
+
+// la referencia a la función se indica mediante su nombre sin paréntesis, ya que de otro modo se estaría // ejecutando la función y almacenando el valor devuelto en la propiedad onload.
+
+    http_request.onload = success;
+
+// 3 - Configuro la conexión Ajax
+
+    http_request.open('POST', 'ajax/cargaNettsUser.php', true);
+
+//4 - Establezco una cabecera que permita al servidor saber que tiene que leer $_POST
+
+    http_request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+//5 - Envío la petición Ajax
+
+    http_request.send();
+
+}
+
+function recuperarNettsSeguidor() {
 
 // 1- Inicializo objeto xmlHttpRequest
 
@@ -74,12 +97,18 @@ function success(){
 
     var objeto_json = JSON.parse(respuesta_json);
 
-    let id_netts= objeto_json.listaNetts[0].id_nett;
+    if (objeto_json==null){
 
-    id_netts+= objeto_json.listaNetts[2].id_nett;
+        alert('no tienes ningun nett');
 
-    alert(id_netts);
+    } else {
 
+        let id_netts = objeto_json.listaNetts[0].id_nett;
+
+        id_netts += objeto_json.listaNetts[2].id_nett;
+
+        alert(id_netts);
+    }
 }
 
 /*

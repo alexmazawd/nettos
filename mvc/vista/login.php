@@ -38,6 +38,44 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD
+=======
+<div>
+    <form action="index.php?pagina=login" method="post">
+        <h1>ALTA DE USUARIOS</h1>
+        {{errores}}
+
+        <label class="{{class-usuario}}" for="usuario">Nombre</label>
+
+        <input type="text" id="usuario" name="usuario"
+               value='<?php echo $val->restoreValue('usuario'); ?>'>
+
+        <span id="usuarioSpan">{{war-usuario}}</span>
+
+        <br>
+
+        <br>
+
+        <label class="{{class-clave}}" for="clave">Clave</label>
+
+        <input type="text" id="clave" name="clave"
+
+               value='<?php echo $val->restoreValue('clave'); ?>'>
+
+        <span>{{war-clave}}</span>
+
+        <br>
+
+        <br>
+
+        <label for="log">Mantener sesion iniciada</label>
+
+        <input type="checkbox" id="log" name="log"
+
+               value='<?php echo $val->restoreCheckboxes('log',true); ?>'>
+
+        <br>
+>>>>>>> 5fcd20fa1f541d7679a5e01a1be79373e62cfa54
 
 <div class="limiter">
     <div class="container-login100">

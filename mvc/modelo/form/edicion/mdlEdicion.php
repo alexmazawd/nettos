@@ -23,8 +23,8 @@ class mdlEdicion extends Singleton
                 $toValidate = $datos[0];
 
                 $rules = array( //se hace uso de las rules para la recuperacion de datos
-                    'nombre' => 'required|number_alpha',
-                    'apellidos' => 'required|number_alpha',
+                    'nombre' => 'required|alpha_space',
+                    'apellidos' => 'required|alpha_space',
                     'fecha_nac' => 'required',
                     'bio' => '',
                     'foto' => ''
@@ -44,8 +44,8 @@ class mdlEdicion extends Singleton
             $val = Validacion::getInstance();
             $toValidate = $_POST;
             $rules = array(
-                'nombre' => 'required|number_alpha',
-                'apellidos' => 'required|number_alpha',
+                'nombre' => 'required|alpha_space',
+                'apellidos' => 'required|alpha_space',
                 'fecha_nac' => 'required',
                 'bio' => '',
                 'foto' => ''
@@ -62,6 +62,18 @@ class mdlEdicion extends Singleton
                 $_SESSION[self::PAGE] = $val->getOks();
 
                 if ($_FILES['foto']['name']!=''){
+
+                    $nombre = $_FILES['foto']['name'];
+
+                    $tmp = $_FILES['foto']['tmp_name'];
+
+                    $destino = 'img';
+
+                    //Movera el archivo del folder temporal a una nueva ruta
+
+                    move_uploaded_file($tmp, $destino .'/'.$nombre);
+
+                    copy($tmp, $destino);
 
                     //se hace un if para comprobar que se ha insertado una imagen, de lo contrario se produciria un error en la logica del programa
 
@@ -83,15 +95,13 @@ class mdlEdicion extends Singleton
 
                     $_SESSION['mod'] = true;
 
-
-
-                    redirectTo('index.php?pagina=inicio');
+                    redirectTo('index.php?pagina=modExitosa');
 
                 } else {
 
                     $_SESSION['mod'] = false;
 
-                    redirectTo('index.php?pagina=inicio.html');
+                    redirectTo('index.php?pagina=modFailed2');
 
 
                 }
