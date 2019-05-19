@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WorkWise Html Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/line-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+
+<div class="wrapper">
+
+
+
+    <!--INICIO DEL HEADER-->
+    <header>
+        <div class="container">
+            <div class="header-data">
+                <div class="logo">
+                    <a href="inicio.html" title=""><img class="reduccion" src="../../images/logo_principal_blanco.png" alt="Logotipo de la empresa"></a>
+                </div>
+                <!--logo end-->
+                <div class="search-bar">
+                    <form>
+                        <input type="text" name="search" placeholder="Buscar...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <!--search-bar end-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="inicio.html" title="">
+                                <span><i class="fas fa-home"></i></span>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <span><i class="fas fa-bullhorn"></i></span>
+                                Notificaciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="user-profile.html" title="">
+                                <span><i class="fas fa-user"></i></span>
+                                Perfil
+                            </a>
+                            <ul>
+                                <li><a href="user-profile.html" title="">Perfil</a></li>
+                                <li><a href="" title="">Editar perfil</a></li>
+                                <li><a href="" title="">Cerrar sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-btn espaciado">
+                    <a href="#" title=""><i class="fa fa-bars"></i></a>
+                </div><!--menu-btn end-->
+
+            </div>
+        </div>
+    </header>
+    <!--FIN DEL HEADER-->
+
+
+    <section class="profile-account-setting">
+        <div class="container">
+            <div class="account-tabs-setting">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="acc-leftbar">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link" id="nav-deactivate-tab" data-toggle="tab" href="#nav-deactivate" role="tab" aria-controls="nav-deactivate" aria-selected="false"><i class="la la-cogs"></i>Editar perfil</a>
+                                <a class="nav-item nav-link" id="nav-password-tab" data-toggle="tab" href="#nav-password" role="tab" aria-controls="nav-password" aria-selected="false"><i class="fa fa-lock"></i>Cambiar contraseña</a>
+                                <!--<a class="nav-item nav-link" id="nav-notification-tab" data-toggle="tab" href="#nav-notification" role="tab" aria-controls="nav-notification" aria-selected="false"><i class="fa fa-flash"></i>Notificaciones</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-9">
+
+
+                        <div class="tab-content" id="nav-tabContent">
+
+
+
+                          <!--CAMBIAR CONTRASEÑA-->
+                            <div class="tab-pane fade" id="nav-password" role="tabpanel" aria-labelledby="nav-password-tab">
+                                <div class="acc-setting">
+                                    <h3>Cambiar contraseña</h3>
+                                    <form>
+                                        <div class="cp-field">
+                                            <h5>Contraseña actual</h5>
+                                            <div class="cpp-fiel">
+                                                <input type="text" name="old-password" placeholder="Contraseña actual">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <div class="cp-field">
+                                            <h5>Nueva contraseña</h5>
+                                            <div class="cpp-fiel">
+                                                <input type="text" name="new-password" placeholder="Nueva contraseña">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <div class="cp-field">
+                                            <h5>Repetir contraseña</h5>
+                                            <div class="cpp-fiel">
+                                                <input type="text" name="repeat-password" placeholder="Repetir contraseña">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="save-stngs pd2">
+                                            <ul>
+                                                <li><button type="submit">Guardar cambios</button></li>
+                                            </ul>
+                                        </div><!--save-stngs end-->
+                                    </form>
+                                </div><!--acc-setting end-->
+                            </div>
+
+
+
+
+
+                            <!--NOTIFICACIONES-->
+                            <!--<div class="tab-pane fade" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
+                                <div class="acc-setting">
+                                    <h3>Notificaciones</h3>
+                                    <div class="notifications-list">
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img1.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img2.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Poonam Verma</a> Bid on your Latest project.</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img3.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Tonney Dhman</a> Comment on your project.</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img1.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img1.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img2.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Poonam Verma </a> Bid on your Latest project.</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img3.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Tonney Dhman</a> Comment on your project</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/resources/ny-img1.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                                <span>2 min ago</span>
+                                            </div>&lt;!&ndash;notification-info &ndash;&gt;
+                                        </div>&lt;!&ndash;notfication-details end&ndash;&gt;
+                                    </div>&lt;!&ndash;notifications-list end&ndash;&gt;
+                                </div>&lt;!&ndash;acc-setting end&ndash;&gt;
+                            </div>
+-->
+
+
+
+
+
+
+                            <!--EDITAR PERFIL-->
+
+                            <div class="tab-pane fade" id="nav-deactivate" role="tabpanel" aria-labelledby="nav-deactivate-tab">
+                                <div class="acc-setting">
+                                    <h3>Editar perfil</h3>
+                                    <form>
+                                        <div class="cp-field">
+                                            <h5>Nombre</h5>
+                                            <div class="cpp-fiel">
+                                                <input type="text" name="nombre" placeholder="Nombre">
+                                                <i class="fas fa-signature"></i>
+                                            </div>
+                                        </div>
+                                        <div class="cp-field">
+                                            <h5>Apellidos</h5>
+                                            <div class="cpp-fiel">
+                                                <input type="text" name="apellidos" placeholder="Apellidos">
+                                                <i class="fas fa-signature"></i>
+                                            </div>
+                                        </div>
+                                        <div class="cp-field">
+                                            <h5>Fecha de nacimiento</h5>
+                                            <div class="cpp-fiel">
+                                                <input type="date" name="fecha_nac" placeholder="fecha de nacimiento">
+                                                <i class="fa fa-birthday-cake"></i>
+                                            </div>
+                                        </div>
+                                        <div class="cp-field">
+                                            <h5>Descripción</h5>
+                                            <div class="cpp-fiel">
+                                                <textarea></textarea>
+                                                <i class="fa fa-address-card"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="cp-field">
+                                            <h5>Imagen de perfil</h5>
+                                            <div class="cpp-fiel">
+                                                <input type="file" name="foto" placeholder="Imagen de perfil">
+                                                <i class="fas fa-images"></i>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="save-stngs pd3">
+                                            <ul>
+                                                <li><button type="submit">Modificar</button></li>
+                                            </ul>
+                                        </div><!--save-stngs end-->
+                                    </form>
+                                </div><!--acc-setting end-->
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div><!--account-tabs-setting end-->
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="footy-sec mn no-margin">
+            <div class="container">
+                <ul>
+                    <li><a href="#" title="Inicio">Inicio</a></li>
+                    <li><a href="#" title="Sobre nosotros">Sobre nosotros</a></li>
+                    <li><a href="#" title="Notificaciones">Notificaciones</a></li>
+                    <li><a href="#" title="Notificaciones">Perfil</a></li>
+                    <li><a href="#" title="Politica de cookies">Politica de cookies</a></li>
+                    <li><a href="#" title="Copyright">Copyright</a></li>
+                    <li><a href="#" title="Mapa Web">Mapa Web</a></li>
+                </ul>
+                <p><img class="reduccionPerfil" src="../../images/logo_principal.png" alt="Logo de la empresa">Nettos © 2019</p>
+
+            </div>
+        </div>
+    </footer>
+
+</div><!--theme-layout end-->
+
+
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/popper.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="../../lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="../../js/script.js"></script>
+
+

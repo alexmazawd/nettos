@@ -83,13 +83,15 @@ class mdlEdicion extends Singleton
 
                     $_SESSION['mod'] = true;
 
-                    redirectTo('index.php?pagina=modExitosa');
+
+
+                    redirectTo('index.php?pagina=inicio');
 
                 } else {
 
                     $_SESSION['mod'] = false;
 
-                    redirectTo('index.php?pagina=modFailed2');
+                    redirectTo('index.php?pagina=inicio.html');
 
 
                 }
