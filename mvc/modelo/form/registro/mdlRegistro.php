@@ -76,21 +76,22 @@ class mdlRegistro extends Singleton
         if (!is_null(getPost(self::PAGE))) {
 
             if ($val->isValid()) {
-// Guardamos los datos en session
+
+                // Guardamos los datos en session
 
                 $_SESSION[self::PAGE] = $val->getOks();
 
                 $data = $_SESSION['registro'];
 
-                $data['clave'] = encodePassword($data['clave']);
+                $data['clave'] = encodePassword($data['clave']); //se codifica la clave antes de guardarla
 
-                $datos = usuarios::insertDB($data);
+                $datos = usuarios::insertDB($data); //se insertan los datos
 
                 if ($datos) {
 
                     $_SESSION['info'] = 'registed';
 
-                    codigos::removeDB($invitacion);
+                    codigos::removeDB($invitacion); //se elimina el codigo de invitacion creado
 
                     redirectTo('index.php?pagina=edicion');
 

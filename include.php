@@ -68,7 +68,7 @@ $Regex = new RegexIterator($Iterator, '/^.+\.php$/i', RecursiveRegexIterator::GE
 
 foreach ($Regex as $key => $item)
 
-    if (!contains('index', $key) && !contains('include', $key) && !contains('vista', $key))
+    if (!contains('index', $key) && !contains('include', $key) && !contains('vista', $key) && !contains('ajax', $key)) //OJITO CON ESTO Y LAS AJAX
 
-        require_once $key;
+    require_once $key;
 
