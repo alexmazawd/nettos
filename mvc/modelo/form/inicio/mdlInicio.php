@@ -6,8 +6,6 @@ class mdlInicio extends Singleton
 {
     const PAGE = 'inicio';
 
-<<<<<<< HEAD
-=======
     public function onGestionPagina()
     {
         if (getGet('pagina') != self::PAGE) return;
@@ -20,7 +18,6 @@ class mdlInicio extends Singleton
     }
 
 
->>>>>>> master
     public function onCargarVista($path)
     {
         if (getGet('pagina') != self::PAGE) return;

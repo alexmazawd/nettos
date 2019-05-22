@@ -63,7 +63,7 @@ class usuarios
     {
         $database = medoo::getInstance();
         $database->openConnection(MYSQL_CONFIG);
-        $datos = $database->select('usuarios', ['nombre','apellidos','fecha_nac','bio','foto','fecha_reg'], ["id_usuario[=]" => $id]);
+        $datos = $database->select('usuarios', '*', ["id_usuario[=]" => $id]);
         $database->closeConnection();
         return $datos;
     }
@@ -106,6 +106,7 @@ class usuarios
     public static function insertDB($data)
 
     {
+
         $database = medoo::getInstance();
 
         $database->openConnection(MYSQL_CONFIG);
