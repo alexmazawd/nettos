@@ -24,6 +24,8 @@
     <body>
     <div class="wrapper">
 
+        <!-- Se añade js para crear el nett -->
+        <script async src="/nettos/js/insertaNett.js"></script>
 
         <!--INICIO DEL HEADER-->
         <header>
@@ -111,7 +113,7 @@
                                                 <h4>SEGUIDORES</h4>
                                                 <span id="numSeguidores">1</span>
                                             </li>
-                                        
+
                                         </ul>
                                     </div>
                                     <!--user-data end-->
@@ -388,14 +390,14 @@
                     <form>
                         <div class="row">
                             <div class="col-lg-12">
-                                <textarea name="nett" placeholder="Cuentanos que estas pensando!"></textarea>
+                                <textarea name="nett" id="nett" placeholder="Cuentanos que estas pensando!"></textarea>
                             </div>
                             <div class="col-lg-6">
-                                    <input type="file" placeholder="Introduce una imagen" title="Subir archivos">
+                                    <input type="file" id="imgNett" placeholder="Introduce una imagen" title="Subir archivos">
                                 </div>
                             <div class="col-lg-12">
                                 <ul>
-                                    <li><button class="active" type="submit" value="post">Publicar Nett</button></li>
+                                    <li><button class="active" type="submit" value="post" onclick="peticionAJAX()">Publicar Nett</button></li>
                                     <li><a href="#" title="">Cancelar</a></li>
                                 </ul>
                             </div>

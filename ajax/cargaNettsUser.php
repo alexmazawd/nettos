@@ -1,6 +1,6 @@
 <?php
 
-require_once "../include.php";
+require_once "include.php";
 
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 

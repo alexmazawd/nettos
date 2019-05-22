@@ -17,4 +17,22 @@ class netts{
         return $datos;
     }
 
+    public static function insertDB($contenido,$id,$imagen)
+    {
+
+        $database = medoo::getInstance();
+
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->insert('netts', [
+	                       "id_usuario" => $id,
+	                       "contenido" => $contenido,
+	                       "imagen" => $imagen]);
+
+        $database->closeConnection();
+
+        return $datos;
+
+    }
+
 }
