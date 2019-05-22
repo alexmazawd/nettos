@@ -387,17 +387,17 @@
             <div class="post-project">
                 <h3>Publicando un Nett..</h3>
                 <div class="post-project-fields">
-                    <form>
+                    <form action="" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-lg-12">
                                 <textarea name="nett" id="nett" placeholder="Cuentanos que estas pensando!"></textarea>
                             </div>
                             <div class="col-lg-6">
-                                    <input type="file" id="imgNett" placeholder="Introduce una imagen" title="Subir archivos">
+                                    <input type="file" id="imgNett" name="imgNett" placeholder="Introduce una imagen" title="Subir archivos">
                                 </div>
                             <div class="col-lg-12">
                                 <ul>
-                                    <li><button class="active" value="post" onclick="peticionAJAX()">Publicar Nett</button></li>
+                                    <li><button class="active" type="submit" value="post" onclick="peticionAJAX()">Publicar Nett</button></li>
                                     <li><a href="#" title="">Cancelar</a></li>
                                 </ul>
                             </div>

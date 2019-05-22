@@ -14,7 +14,25 @@ class mdlInicio extends Singleton
             // Cambiamos el paso
             redirectTo('index.php?pagina=login');
         }
+        if (isset($_FILES['imgNett'])) {
 
+            if ($_FILES['imgNett']['name'] != '') {
+
+                $nombre = $_FILES['imgNett']['name'];
+
+                $tmp = $_FILES['imgNett']['tmp_name'];
+
+                $destino = 'images';
+
+                //Movera el archivo del folder temporal a una nueva ruta
+
+                move_uploaded_file($tmp, $destino . '/' . $nombre);
+
+                //se hace un if para comprobar que se ha insertado una imagen, de lo contrario se produciria un error en la logica del programa
+
+            }
+
+        }
     }
 
 
