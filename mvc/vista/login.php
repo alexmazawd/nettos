@@ -7,6 +7,20 @@
 
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
     <!--===============================================================================================-->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -38,44 +52,6 @@
     </style>
 </head>
 <body>
-<<<<<<< HEAD
-=======
-<div>
-    <form action="index.php?pagina=login" method="post">
-        <h1>ALTA DE USUARIOS</h1>
-        {{errores}}
-
-        <label class="{{class-usuario}}" for="usuario">Nombre</label>
-
-        <input type="text" id="usuario" name="usuario"
-               value='<?php echo $val->restoreValue('usuario'); ?>'>
-
-        <span id="usuarioSpan">{{war-usuario}}</span>
-
-        <br>
-
-        <br>
-
-        <label class="{{class-clave}}" for="clave">Clave</label>
-
-        <input type="text" id="clave" name="clave"
-
-               value='<?php echo $val->restoreValue('clave'); ?>'>
-
-        <span>{{war-clave}}</span>
-
-        <br>
-
-        <br>
-
-        <label for="log">Mantener sesion iniciada</label>
-
-        <input type="checkbox" id="log" name="log"
-
-               value='<?php echo $val->restoreCheckboxes('log',true); ?>'>
-
-        <br>
->>>>>>> 5fcd20fa1f541d7679a5e01a1be79373e62cfa54
 
 <div class="limiter">
     <div class="container-login100">
@@ -129,6 +105,22 @@
         </div>
     </div>
 </div>
+
+<footer>
+    <div class="footy-sec mn no-margin">
+        <div class="container">
+            <ul>
+                <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Sobre Nosotros">Sobre Nosotros</a></li>
+                <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Política de datos">Política de datos</a></li>
+                <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Política de cookies">Política de cookies</a></li>
+                <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Copyright">Copyright</a></li>
+                <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Mapa Web">Mapa Web</a></li>
+            </ul>
+            <p><img class="reduccionPerfil" src="images/logo_principal.png" alt="Logo de la empresa">Nettos © 2019</p>
+
+        </div>
+    </div>
+</footer>
 
 
 

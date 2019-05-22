@@ -63,6 +63,7 @@ class mdlEdicion extends Singleton
 
                 if ($_FILES['foto']['name']!=''){
 
+<<<<<<< HEAD
                     $nombre = $_FILES['foto']['name'];
 
                     $tmp = $_FILES['foto']['tmp_name'];
@@ -75,6 +76,8 @@ class mdlEdicion extends Singleton
 
                     copy($tmp, $destino);
 
+=======
+>>>>>>> master
                     //se hace un if para comprobar que se ha insertado una imagen, de lo contrario se produciria un error en la logica del programa
 
                     $_SESSION[self::PAGE]['foto']= $_FILES['foto']['name']; //se almacena el nombre de la imagen
@@ -95,13 +98,13 @@ class mdlEdicion extends Singleton
 
                     $_SESSION['mod'] = true;
 
-                    redirectTo('index.php?pagina=modExitosa');
+                    redirectTo('index.php?pagina=perfil');
 
                 } else {
 
                     $_SESSION['mod'] = false;
 
-                    redirectTo('index.php?pagina=modFailed2');
+                    redirectTo('index.php?pagina=perfil');
 
 
                 }

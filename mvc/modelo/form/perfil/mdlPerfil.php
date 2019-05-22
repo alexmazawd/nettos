@@ -1,13 +1,9 @@
 <?php
 
-
-
-class mdlInicio extends Singleton
+class mdlPerfil extends Singleton
 {
-    const PAGE = 'inicio';
+    const PAGE = 'perfil';
 
-<<<<<<< HEAD
-=======
     public function onGestionPagina()
     {
         if (getGet('pagina') != self::PAGE) return;
@@ -19,8 +15,6 @@ class mdlInicio extends Singleton
 
     }
 
-
->>>>>>> master
     public function onCargarVista($path)
     {
         if (getGet('pagina') != self::PAGE) return;

@@ -209,7 +209,11 @@ $(".ed-opts-open").on("click", function () {
     return false;
 });
 
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> master
 // ============== Menu Script =============
 
 $(".menu-btn > a").on("click", function () {
@@ -217,7 +221,11 @@ $(".menu-btn > a").on("click", function () {
     return false;
 });
 
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> master
 //  ============ Notifications Open =============
 
 $(".not-box-open").on("click", function () {
