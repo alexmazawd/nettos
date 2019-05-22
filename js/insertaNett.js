@@ -23,7 +23,7 @@ function peticionAJAX() {
 
         xhr.onload = gestionarRespuesta;
 
-        xhr.open("POST", "/nettos/ajax/publicarNetts.php", true);
+        xhr.open("POST", "ajax/publicarNetts.php", true);
 
         var json ="nett="+ creaJsonObj();
 

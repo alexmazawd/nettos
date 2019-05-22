@@ -25,7 +25,7 @@
     <div class="wrapper">
 
         <!-- Se añade js para crear el nett -->
-        <script async src="/nettos/js/insertaNett.js"></script>
+        <script async src="js/insertaNett.js"></script>
 
         <!--INICIO DEL HEADER-->
         <header>
