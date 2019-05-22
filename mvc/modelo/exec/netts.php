@@ -38,7 +38,7 @@ class netts{
     }
 
 
-    public static function insertDB($contenido,$id_usuario,$imagen=null)
+    public static function insertNettsDB($contenido,$id_usuario,$imagen=null)
 
     {
 

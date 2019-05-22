@@ -7,13 +7,16 @@ function creaJsonObj() {
 	let aux = imagen.substr(imagen.indexOf("\\") + 1, imagen.length);
 	let nombre = aux.substr(aux.indexOf("\\") + 1, aux.length);
 
-    console.log(nombre);
-    return JSONObject = {
+    console.log(nett);
+
+    let JSONObject = {
 
         contenido: nett,
         imagen: nombre
 
         };
+
+    return JSON.stringify(JSONObject);
 }
 
 function peticionAJAX() {
@@ -26,9 +29,11 @@ function peticionAJAX() {
 
         xhr.onload = gestionarRespuesta;
 
-        xhr.open("POST", "/nettos/ajax/publicarNetts.php", true);
+        xhr.open("POST", "ajax/publicarNetts.php", true);
 
         var json ="nett="+ creaJsonObj();
+
+        console.log(json);
 
         xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 
