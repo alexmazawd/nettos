@@ -13,24 +13,28 @@ $response = $_POST['nett'];//Espera un post con nombre nett
 
  *      imagen: nombreimagen
 
-        };
+
+ *      };
  *
- * 
  *
  *
  **/
 
 $doc = json_decode($response, true);
 
-$contenido=$doc['contenido'];
+$contenido=$doc["contenido"];
 
-$imagen=$doc['imagen'];
+$imagen=$doc["imagen"];
 
-if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion
+$id = $_COOKIE['logged']; //id del usuario que inserta el nett
 
-    $id = $_COOKIE['logged']; //id del usuario que inserta el nett
+$netts = netts::insertNettsDB($contenido,$id,$imagen);
 
-    $netts = netts::insertDB($contenido,$id,$imagen); //Se inserta el contenido
+//Se inserta el contenido
+/*
+if (!isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion
 
-    return $netts;
-}
+
+
+    return $netts; */
+

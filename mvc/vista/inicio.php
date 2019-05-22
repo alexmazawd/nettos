@@ -25,7 +25,7 @@
     <div class="wrapper">
 
         <!-- Se añade js para crear el nett -->
-        <script async src="/nettos/js/insertaNett.js"></script>
+        <script async src="js/insertaNett.js"></script>
 
         <!--INICIO DEL HEADER-->
         <header>
@@ -397,7 +397,7 @@
                                 </div>
                             <div class="col-lg-12">
                                 <ul>
-                                    <li><button class="active" type="submit" value="post" onclick="peticionAJAX()">Publicar Nett</button></li>
+                                    <li><button class="active" value="post" onclick="peticionAJAX()">Publicar Nett</button></li>
                                     <li><a href="#" title="">Cancelar</a></li>
                                 </ul>
                             </div>

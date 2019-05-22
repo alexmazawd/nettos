@@ -61,17 +61,34 @@ class mdlEdicion extends Singleton
 
                 $_SESSION[self::PAGE] = $val->getOks();
 
-                if ($_FILES['foto']['name']!=''){
+                if ($val->isValid()) { //si esta todo valido se almacenan los nuevos datos
 
-                    //se hace un if para comprobar que se ha insertado una imagen, de lo contrario se produciria un error en la logica del programa
+                    $_SESSION[self::PAGE] = $val->getOks();
 
-                    $_SESSION[self::PAGE]['foto']= $_FILES['foto']['name']; //se almacena el nombre de la imagen
+                    if ($_FILES['foto']['name']!=''){
 
-                }else{ //si no se ha insertado nada simplemente se destruye la variable foto
+                        $nombre = $_FILES['foto']['name'];
 
-                    unset($_SESSION[self::PAGE]['foto']);
+                        $tmp = $_FILES['foto']['tmp_name'];
 
-                }
+                        $destino = 'images';
+
+                        //Movera el archivo del folder temporal a una nueva ruta
+
+                        move_uploaded_file($tmp, $destino .'/'.$nombre);
+
+                        copy($tmp, $destino);
+
+                        //se hace un if para comprobar que se ha insertado una imagen, de lo contrario se produciria un error en la logica del programa
+
+                        $_SESSION[self::PAGE]['foto']= $_FILES['foto']['name']; //se almacena el nombre de la imagen
+
+                    }else{ //si no se ha insertado nada simplemente se destruye la variable foto
+
+                        unset($_SESSION[self::PAGE]['foto']);
+
+                    }
+
 
 // Guardamos en el array $data los datos de $_SESSION['edicion'] que sólo contiene el nombre pero el método Usuario::modifyDB espera un array
 
@@ -95,6 +112,7 @@ class mdlEdicion extends Singleton
                 }
             }
         }
+    }
     }
 
     public function onCargarVista($path)
