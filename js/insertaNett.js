@@ -7,9 +7,8 @@ function creaJsonObj() {
 	let aux = imagen.substr(imagen.indexOf("\\") + 1, imagen.length);
 	let nombre = aux.substr(aux.indexOf("\\") + 1, aux.length);
 
-    console.log(nett);
 
-    let JSONObject = {
+    JSONObject = {
 
         contenido: nett,
         imagen: nombre
@@ -20,8 +19,6 @@ function creaJsonObj() {
 }
 
 function peticionAJAX() {
-
-    console.log("Entra");
 
     xhr = new XMLHttpRequest();
 
@@ -46,6 +43,4 @@ function peticionAJAX() {
 function gestionarRespuesta() {
 
     console.log(xhr.responseText);
-
-
 }

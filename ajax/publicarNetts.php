@@ -13,9 +13,9 @@ $response = $_POST['nett'];//Espera un post con nombre nett
 
  *      imagen: nombreimagen
 
-        };
+
+ *      };
  *
- * 
  *
  *
  **/
