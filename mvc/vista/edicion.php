@@ -36,12 +36,11 @@
 
 <div class="wrapper">
 
-    <!--INICIO DEL HEADER-->
     <header>
         <div class="container">
             <div class="header-data">
                 <div class="logo">
-                    <a href="inicio.php" title=""><img class="reduccion" src="images/logo_principal_blanco.png" alt="Logotipo de la empresa"></a>
+                    <a href="?pagina=inicio" title=""><img class="reduccion" src="images/logo_principal_blanco.png" alt="Logotipo de la empresa"></a>
                 </div>
                 <!--logo end-->
                 <div class="search-bar">
@@ -54,38 +53,40 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="mvc/vista/inicio.php" title="">
+                            <a href="?pagina=inicio" title="">
                                 <span><i class="fas fa-home"></i></span>
                                 Inicio
                             </a>
                         </li>
                         <li>
-                            <a href="mvc/vista/notificaciones.php" title="">
+                            <a href="?pagina=notificaciones" title="">
                                 <span><i class="fas fa-bullhorn"></i></span>
                                 Notificaciones
                             </a>
                         </li>
                         <li>
-                            <a href="mvc/vista/perfil.php" title="">
+                            <a href="?pagina=perfil" title="">
                                 <span><i class="fas fa-user"></i></span>
                                 Perfil
                             </a>
                             <ul>
-                                <li><a href="mvc/vista/perfil.php" title="">Perfil</a></li>
-                                <li><a hhref="../../index.php?pagina=edicion" title="">Editar perfil</a></li>
-                                <li><a href="" title="">Cerrar sesion</a></li>
+                                <li><a href="perfil.php" title="">Perfil</a></li>
+                                <li><a href="?pagina=edicion" title="">Editar perfil</a></li>
+                                <li><a href="?pagina=cerrarSesion" title="">Cerrar sesion</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
+                <!--nav end-->
                 <div class="menu-btn espaciado">
                     <a href="#" title=""><i class="fa fa-bars"></i></a>
-                </div><!--menu-btn end-->
-
+                </div>
+                <!--menu-btn end-->
             </div>
+            <!--header-data end-->
         </div>
     </header>
-    <!--FIN DEL HEADER-->
+    <!--header end-->
 
 
     <section class="profile-account-setting">

@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="header-data">
                     <div class="logo">
-                        <a href="?pagina=inicio" title=""><img class="reduccion" src="../../images/logo_principal_blanco.png" alt="Logotipo de la empresa"></a>
+                        <a href="?pagina=inicio" title=""><img class="reduccion" src="images/logo_principal_blanco.png" alt="Logotipo de la empresa"></a>
                     </div>
                     <!--logo end-->
                     <div class="search-bar">
@@ -336,7 +336,7 @@
                                         <h3>Bienvenido a Nettos</h3>
                                         <span>Esta RRSS esta especialemente pensada para ti!</span>
                                         <div class="sign_link">
-                                            <h3><a href="#" title="">Cerrar sesión</a></h3>
+                                            <h3><a href="?pagina=cerrarSesion" title="">Cerrar sesión</a></h3>
                                         </div>
                                     </div>
                                     <!--widget-about end-->
@@ -348,15 +348,17 @@
                                     <!--FOOTER-->
 
                                     <div class="tags-sec full-width">
+
                                         <ul>
-                                            <li><a href="#" onclick="window.open('politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Sobre Nosotros">Sobre Nosotros</a></li>
-                                            <li><a href="#" onclick="window.open('politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Política de datos">Política de datos</a></li>
-                                            <li><a href="#" onclick="window.open('politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Política de cookies">Política de cookies</a></li>
-                                            <li><a href="#" onclick="window.open('politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Copyright">Copyright</a></li>
-                                            <li><a href="#" onclick="window.open('politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Mapa Web">Mapa Web</a></li>
+                                            <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Sobre Nosotros">Sobre Nosotros</a></li>
+                                            <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Política de datos">Política de datos</a></li>
+                                            <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Política de cookies">Política de cookies</a></li>
+                                            <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Copyright">Copyright</a></li>
+                                            <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Mapa Web">Mapa Web</a></li>
                                         </ul>
+
                                         <div class="cp-sec">
-                                            <img class="reduccionfooter" src="images/logo_principal.png" alt="Logo de la empresa">
+                                            <img class="reduccionfooter" src="images/logo_principal.png" alt="Logotipo de la empresa">
                                             <p class="copy">Nettos © 2019</p>
                                         </div>
                                     </div>
@@ -422,8 +424,6 @@
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="js/scrollbar.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-
-    <a href="index.php?pagina=edicion">Editar perfil</a>
 
     </body>
 </html>

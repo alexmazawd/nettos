@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/line-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/line-awesome.css">
 
-    <link rel="stylesheet" type="text/css" href="../../css/line-awesome-font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -29,12 +29,11 @@
 
 
 
-    <!--INICIO DEL HEADER-->
     <header>
         <div class="container">
             <div class="header-data">
                 <div class="logo">
-                    <a href="?pagina=inicio" title=""><img class="reduccion" src="../../images/logo_principal_blanco.png" alt="Logotipo de la empresa"></a>
+                    <a href="?pagina=inicio" title=""><img class="reduccion" src="images/logo_principal_blanco.png" alt="Logotipo de la empresa"></a>
                 </div>
                 <!--logo end-->
                 <div class="search-bar">
@@ -59,26 +58,28 @@
                             </a>
                         </li>
                         <li>
-                            <a href="?pagina=profile" title="">
+                            <a href="?pagina=perfil" title="">
                                 <span><i class="fas fa-user"></i></span>
                                 Perfil
                             </a>
                             <ul>
-                                <li><a href="?pagina=profile" title="">Perfil</a></li>
+                                <li><a href="?pagina=perfil" title="">Perfil</a></li>
                                 <li><a href="?pagina=edicion" title="">Editar perfil</a></li>
-                                <li><a href="" title="">Cerrar sesion</a></li>
+                                <li><a href="?pagina=cerrarSesion" title="">Cerrar sesion</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
+                <!--nav end-->
                 <div class="menu-btn espaciado">
                     <a href="#" title=""><i class="fa fa-bars"></i></a>
-                </div><!--menu-btn end-->
-
+                </div>
+                <!--menu-btn end-->
             </div>
+            <!--header-data end-->
         </div>
     </header>
-    <!--FIN DEL HEADER-->
+    <!--header end-->
 
 
     <section class="profile-account-setting">
@@ -96,7 +97,7 @@
                                         <div class="notifications-list">
                                             <div class="notfication-details">
                                                 <div class="noty-user-img">
-                                                    <img src="../../images/perfil.jpg" alt="">
+                                                    <img src="images/perfil.jpg" alt="">
                                                 </div>
                                                 <div class="notification-info">
                                                         <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
@@ -105,7 +106,7 @@
                                             </div><!--notfication-details end-->
                                             <div class="notfication-details">
                                                 <div class="noty-user-img">
-                                                    <img src="../../images/logo_principal_blanco.png" alt="">
+                                                    <img src="images/logo_principal_blanco.png" alt="">
                                                 </div>
                                                 <div class="notification-info">
                                                         <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
@@ -114,7 +115,7 @@
                                             </div><!--notfication-details end-->
                                             <div class="notfication-details">
                                                 <div class="noty-user-img">
-                                                    <img src="../../images/user-pro-img.png" alt="">
+                                                    <img src="images/user-pro-img.png" alt="">
                                                 </div>
                                                 <div class="notification-info">
                                                         <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
@@ -123,7 +124,7 @@
                                             </div><!--notfication-details end-->
                                             <div class="notfication-details">
                                                 <div class="noty-user-img">
-                                                    <img src="../../images/logo_principal.png" alt="">
+                                                    <img src="images/logo_principal.png" alt="">
                                                 </div>
                                                 <div class="notification-info">
                                                     <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
@@ -151,6 +152,8 @@
 
 
 
+    <!--FOOTER-->
+
     <footer>
         <div class="footy-sec mn no-margin">
             <div class="container">
@@ -161,20 +164,21 @@
                     <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Copyright">Copyright</a></li>
                     <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Mapa Web">Mapa Web</a></li>
                 </ul>
-                <p><img class="reduccionPerfil" src="../../images/logo_principal.png" alt="Logo de la empresa">Nettos © 2019</p>
+                <p><img class="reduccionPerfil" src="images/logo_principal.png" alt="Logo de la empresa">Nettos © 2019</p>
 
             </div>
         </div>
     </footer>
+    <!--FIN FOOTER-->
 
 </div><!--theme-layout end-->
 
 
 
-<script type="text/javascript" src="../../js/jquery.min.js"></script>
-<script type="text/javascript" src="../../js/popper.js"></script>
-<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../js/jquery.mCustomScrollbar.js"></script>
-<script type="text/javascript" src="../../js/script.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 
