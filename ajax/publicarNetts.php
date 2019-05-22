@@ -13,9 +13,9 @@ $response = $_POST['nett'];//Espera un post con nombre nett
 
  *      imagen: nombreimagen
 
- *        };
+        };
  *
- *
+ * 
  *
  *
  **/
@@ -33,7 +33,4 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
     $netts = netts::insertDB($contenido,$id,$imagen); //Se inserta el contenido
 
     return $netts;
-} else {
-
-    return "Error";
 }

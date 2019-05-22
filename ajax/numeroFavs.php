@@ -6,7 +6,7 @@
  * Time: 17:07
  */
 
-require_once "include.php";
+require_once "../include.php";
 
 $response = $_POST['nett'];//Espera un post con nombre nett que debe tener el id del nett
 
