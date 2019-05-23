@@ -168,6 +168,8 @@
                                     <div class="product-feed-tab current" id="feed-dd">
                                         <div class="posts-section" id="seccionNetts"></div>
                                 <!--main-ws-sec end-->
+                                    </div>
+                                  </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="right-sidebar">
@@ -184,7 +186,6 @@
                                     <!--FOOTER-->
 
                                     <div class="tags-sec full-width">
-
                                         <ul>
                                             <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Sobre Nosotros">Sobre Nosotros</a></li>
                                             <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Política de datos">Política de datos</a></li>
