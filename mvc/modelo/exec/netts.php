@@ -16,7 +16,7 @@ class netts{
 
             ["[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
 
-            ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub"],
+            ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.nombre","usuarios.apellidos"],
 
             ["netts.id_usuario[=]" => $id]);
 
