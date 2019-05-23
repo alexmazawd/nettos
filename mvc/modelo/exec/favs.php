@@ -19,9 +19,9 @@ class favs
 
         $datos = $database->select("favs",
 
-            ["[><]netts"=>["netts.id_nett"=>"id_nett"]],
+            ["[><]netts"=>["favs.id_nett"=>"id_nett"],"[><]usuarios"=>["favs.id_usuario"=>"id_usuario"]],
 
-            ["favs.id_nett","favs.id_usuario","favs.fecha_fav"],
+            ["favs.id_nett","usuarios.nombre","usuarios.apellidos","favs.fecha_fav"],
 
             ["netts.id_usuario[=]" => $id]
         );
