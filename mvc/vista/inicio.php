@@ -400,14 +400,14 @@
                             <div class="col-lg-12">
                                 <ul>
                                     <li><button class="active" type="submit" value="post" onclick="peticionAJAX()">Publicar Nett</button></li>
-                                    <li><a href="#" title="">Cancelar</a></li>
+                                    <li><a href="" title="">Cancelar</a></li>
                                 </ul>
                             </div>
                         </div>
                     </form>
                 </div>
                 <!--post-project-fields end-->
-                <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+                <a href="" title=""><i class="la la-times-circle-o"></i></a>
             </div>
             <!--post-project end-->
         </div>

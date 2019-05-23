@@ -17,8 +17,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+
+    <!-- Se añade js para crear el nett -->
+    <script async src="js/insertaNett.js"></script>
+    <!-- Se añade js para cargar netts del usuario -->
+    <script defer src="js/cargaNettsuser.js"></script>
     <!-- Se añade js para sacar datos del usuario -->
     <script defer src="js/datosUserInicio.js"></script>
+
 
 </head>
 
@@ -300,7 +306,7 @@
                                             <div class="post-bar">
                                                 <div class="post_topbar">
                                                     <div class="usy-dt">
-                                                        <img src="images/perfil.jpg"">
+                                                        <img src="images/perfil.jpg">
                                                         <div class="usy-name">
                                                             <h3>NOMBRE DE USUARIO</h3>
                                                         </div>
@@ -384,22 +390,25 @@
             <div class="post-project">
                 <h3>Publicando un Nett..</h3>
                 <div class="post-project-fields">
-                    <form>
+                    <form action="" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-lg-12">
-                                <textarea name="nett" placeholder="Cuentanos que estas pensando!"></textarea>
+                                <textarea name="nett" id="nett" maxlength="140" placeholder="Cuentanos que estas pensando!"></textarea>
                             </div>
+                            <div class="col-lg-6">
+                                    <input type="file" id="imgNett" name="imgNett" placeholder="Introduce una imagen" title="Subir archivos">
+                                </div>
                             <div class="col-lg-12">
                                 <ul>
-                                    <li><button class="active" type="submit" value="post">Publicar Nett</button></li>
-                                    <li><a href="#" title="">Cancel</a></li>
+                                    <li><button class="active" type="submit" value="post" onclick="peticionAJAX()">Publicar Nett</button></li>
+                                    <li><a href="" title="">Cancelar</a></li>
                                 </ul>
                             </div>
                         </div>
                     </form>
                 </div>
                 <!--post-project-fields end-->
-                <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+                <a href="" title=""><i class="la la-times-circle-o"></i></a>
             </div>
             <!--post-project end-->
         </div>

@@ -6,7 +6,7 @@ function peticionAJAXdatosUser() {
 
     if (xhr) {
 
-        xhr.onload = gestionarRespuesta;
+        xhr.onload = gestionarRespuestaDatosUser;
 
         xhr.open("POST", "ajax/datosUsuario.php", true);
 
@@ -18,7 +18,7 @@ function peticionAJAXdatosUser() {
 
 }
 
-function gestionarRespuesta() {
+function gestionarRespuestaDatosUser() {
 
     let datos = JSON.parse(xhr.responseText);
     let nombre = datos.usuario[0].nombre;

@@ -24,13 +24,9 @@ function peticionAJAX() {
 
     if (xhr) {
 
-        xhr.onload = gestionarRespuesta;
-
         xhr.open("POST", "ajax/publicarNetts.php", true);
 
         var json ="nett="+ creaJsonObj();
-
-        console.log(json);
 
         xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 
@@ -38,9 +34,4 @@ function peticionAJAX() {
 
     }
 
-}
-
-function gestionarRespuesta() {
-
-    console.log(xhr.responseText);
 }
