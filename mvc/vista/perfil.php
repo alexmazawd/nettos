@@ -16,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Se añade js para sacar datos del usuario -->
+    <script defer src="js/datosUserInicio.js"></script>
+    
 </head>
 
 
@@ -97,10 +101,11 @@
                                         </div>
                                         <!--user-pro-img end-->
                                         <div class="user_pro_status">
+
                                             <ul class="flw-hr">
                                                 <li><a href="#" title="" class="flww"><i class="la la-plus"></i>
                                                         Seguir</a></li>
-                                               
+
                                             </ul>
                                             <ul class="flw-status">
                                                 <li>
@@ -136,9 +141,9 @@
                             <div class="col-lg-6">
                                 <div class="main-ws-sec">
                                     <div class="user-tab-sec">
-                                        <h3>NOMBRE DE USUARIO</h3>
+                                        <h3 id="nUsuario"></h3>
                                         <div>
-                                            <span>DESCRIPCION DEL USUARIO</span>
+                                            <span id="descripcion"></span>
                                         </div>
                                         <br><br>
                                         <div class="post-topbar">

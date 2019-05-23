@@ -26,6 +26,8 @@
 
         <!-- Se añade js para crear el nett -->
         <script async src="js/insertaNett.js"></script>
+        <!-- Se añade js para sacar datos del usuario -->
+        <script defer src="js/datosUserInicio.js"></script>
 
         <!--INICIO DEL HEADER-->
         <header>
@@ -95,8 +97,8 @@
                                             </div>
                                             <!--username-dt end-->
                                             <div class="user-specs">
-                                                <h3 id="nUsurario">NOMBRE DE USUARIO</h3>
-                                                <span id="descripcion">DESCRIPCION</span>
+                                                <h3 id="nUsuario"></h3>
+                                                <span id="descripcion"></span>
                                             </div>
                                         </div>
                                         <!--user-profile end-->
