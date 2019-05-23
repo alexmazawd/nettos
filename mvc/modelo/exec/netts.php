@@ -12,7 +12,14 @@ class netts{
     {
         $database = medoo::getInstance();
         $database->openConnection(MYSQL_CONFIG);
-        $datos = $database->select('netts', '*', ["id_usuario[=]" => $id]);
+        $datos = $database->select("netts",
+
+            ["[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
+
+            ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub"],
+
+            ["netts.id_usuario[=]" => $id]);
+
         $database->closeConnection();
         return $datos;
     }
