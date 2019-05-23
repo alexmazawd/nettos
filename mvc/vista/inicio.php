@@ -92,7 +92,7 @@
                                         <div class="user-profile">
                                             <div class="username-dt">
                                                 <div class="usr-pic">
-                                                    <img src="images/perfil.jpg" alt="Foto de perfil del usuario">
+                                                    <img id="imgPrincipal" src="" alt="Foto de perfil del usuario">
                                                 </div>
                                             </div>
                                             <!--username-dt end-->
@@ -132,7 +132,7 @@
                                 <div class="main-ws-sec">
                                     <div class="post-topbar">
                                         <div class="user-picy">
-                                            <img src="images/perfil.jpg" alt="">
+                                            <img id="imgSecundaria" src="" alt="Foto de perfil del usuario">
                                         </div>
                                         <div class="post-st">
                                             <ul>

@@ -19,7 +19,7 @@
 
     <!-- Se añade js para sacar datos del usuario -->
     <script defer src="js/datosUserInicio.js"></script>
-    
+
 </head>
 
 
@@ -97,7 +97,7 @@
                                 <div class="main-left-sidebar">
                                     <div class="user_profile">
                                         <div class="user-pro-img">
-                                            <img src="images/user-pro-img.png" alt="">
+                                            <img id="imgPrincipal" src="" alt="Foto de perfil del usuario">
                                         </div>
                                         <!--user-pro-img end-->
                                         <div class="user_pro_status">
@@ -148,7 +148,7 @@
                                         <br><br>
                                         <div class="post-topbar">
                                             <div class="user-picy">
-                                                <img src="images/perfil.jpg" alt="">
+                                                <img id="imgSecundaria" src="" alt="Foto de perfil del usuario">
                                             </div>
                                             <div class="post-st">
                                                 <ul>
