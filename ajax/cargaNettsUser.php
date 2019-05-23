@@ -25,13 +25,11 @@ $netts=null;
 
 */
 
-$netts = netts::searchNettsUser(1);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
-
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 
     $id = $_COOKIE['logged'];
 
-    $netts = netts::searchNettsUser(1);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
+    $netts = netts::searchNettsUser($id);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
 
 } else {
 
