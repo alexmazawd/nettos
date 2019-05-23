@@ -59,11 +59,36 @@ class usuarios
 
     }
 
+    public static function searchNombreDB($nombre) {
+        $database = medoo::getInstance();
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->select('usuarios',
+
+            ['id_usuario','nombre','apellidos','foto'],
+
+            ["OR" =>[
+
+                "nombre[=]" => $nombre,
+                "apellidos[=]" => $nombre
+    ]
+            ]);
+
+        $database->closeConnection();
+
+        return $datos;
+    }
+
     public static function searchAllByIdDB($id)
     {
         $database = medoo::getInstance();
         $database->openConnection(MYSQL_CONFIG);
-        $datos = $database->select('usuarios', ['nombre','apellidos','fecha_nac','bio','foto','fecha_reg'], ["id_usuario[=]" => $id]);
+        $datos = $database->select('usuarios',
+
+            ['nombre','apellidos','fecha_nac','bio','foto','fecha_reg'],
+
+
+            ["usuarios.id_usuario[=]" => $id]);
         $database->closeConnection();
         return $datos;
     }

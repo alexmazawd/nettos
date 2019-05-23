@@ -24,6 +24,21 @@ class netts{
         return $datos;
     }
 
+    public static function contarNetts($id)
+    {
+        $database = medoo::getInstance();
+
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->count('netts', '*', [
+
+            "id_usuario[=]" => $id]);
+
+        $database->closeConnection();
+
+        return $datos;
+    }
+
     public static function searchNettsSeguidor($id)
     {
         $database = medoo::getInstance();
