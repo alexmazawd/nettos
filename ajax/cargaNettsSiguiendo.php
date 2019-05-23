@@ -57,7 +57,6 @@ require_once "../include.php";
 
     $netts = netts::searchNettsSeguidor($id); //Para probar esta peticion pueder cambiar la variable id por la id de algun usuario en tu base de datos que siga a otros usuarios
 
-    $arrNetts= [];
 
 //Utilizamos stdClass, clase vacía sin métodos ni propiedades que nos permite construir objetos genéricos
 
@@ -65,16 +64,6 @@ require_once "../include.php";
 
 // Recorremos los campos y sus datos devueltos
 
-// para averiguar los nombres de los campos
-
- /*
-  foreach ($netts as $field => $value) {
-
-        array_push($arrNetts, $value);
-
-    }
-
- */
 
     $objeto_json->listaNetts = $netts;
 

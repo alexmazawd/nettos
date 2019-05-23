@@ -11,7 +11,25 @@ class favs
 
 {
 
-    public static function cargarFavs($id)
+    public static function searchLike($idUser,$idNett)
+    {
+        $database = medoo::getInstance();
+
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->count('favs', '*', ["AND" =>
+            [
+                "id_usuario" => $idUser,
+                "id_nett[=]" => $idNett,
+            ]
+        ]);
+
+        $database->closeConnection();
+
+        return $datos;
+    }
+
+        public static function cargarFavs($id)
     {
         $database = medoo::getInstance();
 
@@ -19,9 +37,9 @@ class favs
 
         $datos = $database->select("favs",
 
-            ["[><]netts"=>["netts.id_nett"=>"id_nett"]],
+            ["[><]netts"=>["favs.id_nett"=>"id_nett"],"[><]usuarios"=>["favs.id_usuario"=>"id_usuario"]],
 
-            ["favs.id_nett","favs.id_usuario","favs.fecha_fav"],
+            ["favs.id_nett","usuarios.nombre","usuarios.apellidos","favs.fecha_fav"],
 
             ["netts.id_usuario[=]" => $id]
         );
@@ -31,6 +49,24 @@ class favs
         return $datos;
     }
 
+    public static function contarLikesUser($id)
+    {
+        $database = medoo::getInstance();
+
+        $database->openConnection(MYSQL_CONFIG);
+
+        $datos = $database->count("favs",
+
+            ["[><]netts"=>["favs.id_nett"=>"id_nett"],"[><]usuarios"=>["favs.id_usuario"=>"id_usuario"]],
+
+            '*',
+
+            ["netts.id_usuario[=]" => $id]
+        );
+        $database->closeConnection();
+
+        return $datos;
+    }
 
     public static function countLikesNett($nett) /* Funcion para contar la cantidad de likes en un nett*/
     {

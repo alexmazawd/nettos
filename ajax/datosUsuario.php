@@ -26,6 +26,14 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 
     $user = usuarios::searchAllByIdDB($id);
 
+    $favs = favs::contarLikesUser($id);
+
+    $netts = netts::contarNetts($id);
+
+    $seguidores= seguidores::contarSeguidores($id);
+
+    $siguiendo = seguidores::contarSiguiendo($id);
+
 } else {
 
     redirectTo('index.php');
@@ -37,6 +45,14 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 $objeto_json = new stdClass();
 
 $objeto_json->usuario=$user;
+
+$objeto_json->seguidores=$seguidores;
+
+$objeto_json->favs=$favs;
+
+$objeto_json->netts=$netts;
+
+$objeto_json->siguiendo=$siguiendo;
 
 echo json_encode($objeto_json);
 
