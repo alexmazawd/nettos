@@ -32,9 +32,9 @@ class netts{
 
         $datos = $database->select("netts",
 
-            ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"]],
+            ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"],"[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
 
-            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub"],
+            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto"],
 
             ["seguidores.id_usuario_seguidor[=]" => $id]
             );
