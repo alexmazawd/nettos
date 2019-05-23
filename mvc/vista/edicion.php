@@ -142,12 +142,9 @@
                                         <div class="cp-field">
                                             <h5>Descripción</h5>
                                             <div class="cpp-fiel">
-                                                    
                                                 <textarea id="bio"
-                                                          name="bio">
-                                                    <?php echo ($val->restoreValue('bio') ? $val->restoreValue('bio') : '') ?></textarea>
+                                                          name="bio"><?php echo ($val->restoreValue('bio') ? $val->restoreValue('bio') : '')?></textarea>
                                                 <span>{{war-bio}}</span>
-                                                
                                             </div>
                                         </div>
 
@@ -169,11 +166,11 @@
                                         </div><!--save-stngs end-->
                                     </form>
                                 </div><!--acc-setting end-->
-                            </div>                       
+                            </div>
                     </div>
-                    
+
                 </div>
-           
+
 
 
 
@@ -209,5 +206,3 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-
