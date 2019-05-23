@@ -773,7 +773,8 @@ main {
 	-ms-border-radius: 100px;
 	-o-border-radius: 100px;
 	border-radius: 100px;
-	width: 100%;
+	width: 120px;
+	height: 120px;
 }
 .user-profile {
 	float: left;
@@ -1008,10 +1009,10 @@ main {
 
 }
 .user-picy img {
-	width: 100%;
+	width: 60px;
+	height: 60px;
 	object-fit: cover;
 	border-radius:150px;
-
 }
 .post-st {
 	float: right;
@@ -2609,6 +2610,8 @@ footer {
 	border-radius: 100px;
 	float: none;
 	border: 5px solid #fff;
+	width: 170px;
+	height: 170px;
 }
 .user_pro_status {
 	float: left;
