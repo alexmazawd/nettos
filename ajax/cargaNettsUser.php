@@ -25,12 +25,13 @@ $netts=null;
 
 */
 
+$netts = netts::searchNettsUser(1);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
 
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 
     $id = $_COOKIE['logged'];
 
-    $netts = netts::searchNettsUser($id);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
+    $netts = netts::searchNettsUser(1);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
 
 } else {
 
@@ -38,23 +39,13 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 
 }
 
-$arrNetts = []; //
-
-//Utilizamos stdClass, clase vacía sin métodos ni propiedades que nos permite construir objetos genéricos
-
-$objeto_json = new stdClass();
-
 // Recorremos los campos y sus datos devueltos
 
 // para averiguar los nombres de los campos
 
-foreach ($netts as $field => $value) {
+$objeto_json = new stdClass();
 
-     array_push($arrNetts,$value);
-
-}
-
-$objeto_json->listaNetts=$arrNetts;
+$objeto_json->listaNetts=$netts;
 
 echo json_encode($objeto_json);
 
