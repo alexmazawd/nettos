@@ -93,7 +93,7 @@
 
                             <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
                                     <div class="acc-setting">
-                                        <h3>Notificaciones</h3>
+                                        <h3>Busqueda</h3>
                                         <div class="notifications-list">
                                             <div class="notfication-details">
                                                 <div class="noty-user-img">

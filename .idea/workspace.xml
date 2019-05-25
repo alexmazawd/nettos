@@ -24,20 +24,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="1072" column="4" lean-forward="true" selection-start-line="1072" selection-start-column="4" selection-end-line="1077" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="4452" column="15" selection-start-line="4452" selection-start-column="15" selection-end-line="4452" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mvc/vista/busqueda.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="117" column="80" selection-start-line="117" selection-start-column="80" selection-end-line="117" selection-end-column="80" />
+            <state relative-caret-position="340">
+              <caret line="95" column="52" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -61,6 +61,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>usr-pic</find>
+      <find>noty</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,9 +71,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/datosUserInicio.js" />
+        <option value="$PROJECT_DIR$/mvc/modelo/form/busqueda/mdlBusqueda.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/mvc/vista/busqueda.php" />
-        <option value="$PROJECT_DIR$/mvc/modelo/form/busqueda/mdlBusqueda.php" />
       </list>
     </option>
   </component>
@@ -184,12 +185,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557252787985</updated>
       <workItem from="1557252789063" duration="38000" />
-      <workItem from="1558805659505" duration="2829000" />
+      <workItem from="1558805659505" duration="3106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2867000" />
+    <option name="totallyTimeSpent" value="3144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -223,22 +224,8 @@
     <entry file="file://$PROJECT_DIR$/images/descarga.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/datosUserInicio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="78" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/vista/pruebanetts.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/vista/busqueda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="80" selection-start-line="117" selection-start-column="80" selection-end-line="117" selection-end-column="80" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc/modelo/form/notificaciones/mdlNotificaciones.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -253,10 +240,24 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/datosUserInicio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="78" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="1072" column="4" lean-forward="true" selection-start-line="1072" selection-start-column="4" selection-end-line="1077" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="4452" column="15" selection-start-line="4452" selection-start-column="15" selection-end-line="4452" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/vista/busqueda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="95" column="52" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
         </state>
       </provider>
     </entry>
