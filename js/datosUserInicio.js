@@ -35,8 +35,21 @@ function gestionarRespuestaDatosUser() {
         document.getElementById('descripcion').innerHTML = "Hey there! I'm using Nettos!";
     }
 
-    document.getElementById('imgPrincipal').src = imagen;
-    document.getElementById('imgSecundaria').src = imagen;
+    if (imagen == "images/null") {
+
+        document.getElementById('imgPrincipal').src = "images/logoSinFoto.png";
+        document.getElementById('imgSecundaria').src = "images/logoSinFoto.png";
+
+
+    } else {
+
+        document.getElementById('imgPrincipal').src = imagen;
+        document.getElementById('imgSecundaria').src = imagen;
+
+
+    }
+
+
 
 }
 
