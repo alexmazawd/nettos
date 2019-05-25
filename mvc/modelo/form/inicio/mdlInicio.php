@@ -14,6 +14,9 @@ class mdlInicio extends Singleton
             // Cambiamos el paso
             redirectTo('index.php?pagina=login');
         }
+
+        setcookie('idPerfil','', time()-36000);
+
         if (isset($_FILES['imgNett'])) {
 
             if ($_FILES['imgNett']['name'] != '') {

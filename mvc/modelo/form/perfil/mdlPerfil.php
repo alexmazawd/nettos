@@ -13,6 +13,14 @@ class mdlPerfil extends Singleton
             redirectTo('index.php?pagina=login');
         }
 
+        setcookie('idPerfil','', time()-36000);
+
+        if (isset($_GET['id'])){
+
+            setcookie('idPerfil', getGet('id'), 0);
+
+        }
+
     }
 
     public function onCargarVista($path)

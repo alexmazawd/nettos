@@ -30,11 +30,11 @@ $relacion = $doc["siguen"]; //esto sera un true o false
 
 if ($relacion) {
 
-    seguidores::dejarDeSeguir(2,1);
+    seguidores::dejarDeSeguir($id_seguidor,$id_siguiendo);
 
 } else{
 
-    seguidores::seguirUsuario(2,1);
+    seguidores::seguirUsuario($id_seguidor,$id_siguiendo);
 
 }
 

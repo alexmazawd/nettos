@@ -20,13 +20,11 @@ require_once "../include.php";
 
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 
-    if (empty($_GET["id"])){
+    $id=$_COOKIE['logged'];
 
-        $id=$_COOKIE['logged'];
+    if (isset($_COOKIE['idPerfil'])){
 
-    }else{
-
-        $id=getGet("id");  //NO PILLA ID POR GET AUN NO RESUELTO
+        $id=$_COOKIE['idPerfil'];
 
     }
 
