@@ -28,6 +28,8 @@
         <script async src="js/insertaNett.js"></script>
         <!-- Se añade js para sacar datos del usuario -->
         <script defer src="js/datosUserInicio.js"></script>
+        <!-- Se añade js para sacar datos del usuario -->
+        <script defer src="js/cargaNettsSiguiendo.js"></script>
 
         <!--INICIO DEL HEADER-->
         <header>
@@ -39,7 +41,7 @@
                     <!--logo end-->
                     <div class="search-bar">
                         <form>
-                            <input type="text" name="search" placeholder="Buscar...">
+                            <input type="text" id="nombre" name="nombre" placeholder="Buscar...">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
@@ -105,15 +107,15 @@
                                         <ul class="user-fw-status">
                                             <li>
                                                 <h4>Netts</h4>
-                                                <span id="numSiguiendo">1</span>
+                                                <span id="nNetts">1</span>
                                             </li>
                                             <li>
                                                 <h4>SEGUIENDO</h4>
-                                                <span id="numSiguiendo">1</span>
+                                                <span id="nSiguiendo">1</span>
                                             </li>
                                             <li>
                                                 <h4>SEGUIDORES</h4>
-                                                <span id="numSeguidores">1</span>
+                                                <span id="nSeguidores">1</span>
                                             </li>
 
                                         </ul>
@@ -142,198 +144,16 @@
                                     </div>
                                     <!--post-topbar end-->
 
-
-
-
-
-
                                     <!--INICIO DE SECCION PARA PONER LOS NETTS-->
-                                    <div class="posts-section">
-
-
-                                        <!--INICIO NETT 1º-->
-                                        <div class="post-bar">
-                                            <div class="post_topbar">
-                                                <div class="usy-dt">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                    <div class="usy-name">
-                                                        <h3>NOMBRE DE USUARIO</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="job_descp">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                                    luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id
-                                                    magna sit ametLorem</p>
-
-                                            </div>
-
-
-
-                                            <div class="job-status-bar">
-                                                <ul class="like-com">
-                                                    <li>
-                                                        <a href="#"><i class="la la-heart"></i> Me gusta</a>
-                                                        <span>25</span>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <!--FINAL NETT 1º-->
-
-                                        <!--INICIO NETT 1º-->
-                                        <div class="post-bar">
-                                            <div class="post_topbar">
-                                                <div class="usy-dt">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                    <div class="usy-name">
-                                                        <h3>NOMBRE DE USUARIO</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="job_descp">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                                    luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id
-                                                    magna sit ametLorem</p>
-
-                                            </div>
-
-
-
-                                            <div class="job-status-bar">
-                                                <ul class="like-com">
-                                                    <li>
-                                                        <a href="#"><i class="la la-heart"></i> Me gusta</a>
-                                                        <span>25</span>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <!--FINAL NETT 1º-->
-
-                                        <!--INICIO NETT 1º-->
-                                        <div class="post-bar">
-                                            <div class="post_topbar">
-                                                <div class="usy-dt">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                    <div class="usy-name">
-                                                        <h3>NOMBRE DE USUARIO</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="job_descp">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                                    luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id
-                                                    magna sit ametLorem</p>
-
-                                            </div>
-
-
-
-                                            <div class="job-status-bar">
-                                                <ul class="like-com">
-                                                    <li>
-                                                        <a href="#"><i class="la la-heart"></i> Me gusta</a>
-                                                        <span>25</span>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <!--FINAL NETT 1º-->
-
-                                        <!--INICIO NETT 1º-->
-                                        <div class="post-bar">
-                                            <div class="post_topbar">
-                                                <div class="usy-dt">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                    <div class="usy-name">
-                                                        <h3>NOMBRE DE USUARIO</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="job_descp">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                                    luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id
-                                                    magna sit ametLorem</p>
-
-                                            </div>
-
-
-
-                                            <div class="job-status-bar">
-                                                <ul class="like-com">
-                                                    <li>
-                                                        <a href="#"><i class="la la-heart"></i> Me gusta</a>
-                                                        <span>25</span>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <!--FINAL NETT 1º-->
-
-                                        <!--INICIO NETT 1º-->
-                                        <div class="post-bar">
-                                            <div class="post_topbar">
-                                                <div class="usy-dt">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                    <div class="usy-name">
-                                                        <h3>NOMBRE DE USUARIO</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="job_descp">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                                    luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id
-                                                    magna sit ametLorem</p>
-
-                                            </div>
-
-
-
-                                            <div class="job-status-bar">
-                                                <ul class="like-com">
-                                                    <li>
-                                                        <a href="#"><i class="la la-heart"></i> Me gusta</a>
-                                                        <span>25</span>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <!--FINAL NETT 1º-->
-
-
-
+                                    <div class="posts-section" id="seccionNetts">
                                     </div>
                                     <!--FINAL DE SECCION PARA PONER LOS NETTS-->
 
 
                                 </div>
                             </div>
-
-
-
-
-
-                            <div class="col-lg-3 pd-right-none no-pd">
+                                <div class="col-lg-3 pd-right-none no-pd">
                                 <div class="right-sidebar">
-
-
-
 
                                     <div class="widget widget-about">
                                         <img class="reduccion" src="images/logo_principal.png" alt="Logo de la empresa">
@@ -344,10 +164,6 @@
                                         </div>
                                     </div>
                                     <!--widget-about end-->
-
-
-
-
 
                                     <!--FOOTER-->
 

@@ -1,27 +1,29 @@
-var http_peti;
+var peti_xhr;
 
-function peticionAJAXNettsuser() {
+function peticionAJAXNettsSiguiendo() {
 
-    http_peti = new XMLHttpRequest();
+    peti_xhr = new XMLHttpRequest();
 
-    if (http_peti) {
+    if (peti_xhr) {
 
-        http_peti.onload = gestionarRespuestaNetts;
+        peti_xhr.onload = gestionarRespuestaNettsSiguiendo;
 
-        http_peti.open("POST", "ajax/cargaNettsUser.php", true);
+        peti_xhr.open("POST", "ajax/cargaNettsSiguiendo.php", true);
 
-        http_peti.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        peti_xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 
-        http_peti.send(null);
+        peti_xhr.send(null);
 
     }
 
 }
 
-function gestionarRespuestaNetts() {
+function gestionarRespuestaNettsSiguiendo() {
 
-    let JsonObj = JSON.parse(http_peti.responseText);
+    let JsonObj = JSON.parse(peti_xhr.responseText);
     let netts = JsonObj.listaNetts;
+
+    console.log(netts);
 
     for (let i = netts.length - 1; i >= 0; i--) {
 
@@ -47,4 +49,4 @@ function gestionarRespuestaNetts() {
     }
 }
 
-peticionAJAXNettsuser();
+peticionAJAXNettsSiguiendo();

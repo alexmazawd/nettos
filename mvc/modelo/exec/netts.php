@@ -49,9 +49,11 @@ class netts{
 
             ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"],"[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
 
-            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto"],
+            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.nombre","usuarios.apellidos"],
 
-            ["seguidores.id_usuario_seguidor[=]" => $id]
+            ["seguidores.id_usuario_seguidor[=]" => $id],
+
+            ["ORDER" => ["netts.fecha_pub" => "DESC"]]
             );
 
         $database->closeConnection();

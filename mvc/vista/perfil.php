@@ -116,20 +116,20 @@
                                             <ul class="flw-status">
                                                 <li>
                                                     <span>Siguiendo</span>
-                                                    <b>1234</b>
+                                                    <b id="nSiguiendo"></b>
                                                 </li>
                                                 <li>
                                                     <span>Seguidores</span>
-                                                    <b>134</b>
+                                                    <b id="nSeguidores"></b>
                                                 </li>
                                                 <li>
                                                     <span>Netts</span>
-                                                    <b>132</b>
+                                                    <b id="nNetts"></b>
                                                 </li>
 
                                                 <li>
                                                     <span>MG</span>
-                                                    <b>351</b>
+                                                    <b id="nMgs"></b>
                                                 </li>
 
                                             </ul>

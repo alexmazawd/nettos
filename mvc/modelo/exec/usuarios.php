@@ -145,7 +145,9 @@ class usuarios
 
             "apellidos" => $data['apellidos'],
 
-            "clave" => $data['clave']
+            "clave" => $data['clave'],
+
+            "foto" => "logoSinFoto.png"
 
         ]);
 
