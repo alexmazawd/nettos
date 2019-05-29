@@ -21,6 +21,18 @@ function peticionAJAXdatosUser() {
 function gestionarRespuestaDatosUser() {
 
     let datos = JSON.parse(xhr.responseText);
+    console.log(datos);
+    if (document.getElementById('contBtnSeguir')) {
+
+        if (datos.usuarioOnline) {
+
+            document.getElementById('contBtnSeguir').remove();
+        } else {
+
+            document.getElementById('publicarNett').remove();
+        }
+    }
+
     let nombre = datos.usuario[0].nombre;
     let apellidos = datos.usuario[0].apellidos;
     let descripcion = datos.usuario[0].bio;
@@ -40,12 +52,11 @@ function gestionarRespuestaDatosUser() {
     }
 
     document.getElementById('imgPrincipal').src = imagen;
-    document.getElementById('imgSecundaria').src = imagen;
     document.getElementById('nSiguiendo').innerHTML = siguiendo;
     document.getElementById('nSeguidores').innerHTML = seguidores;
     document.getElementById('nNetts').innerHTML = netts;
     document.getElementById('nMgs').innerHTML = favs;
-
+    document.getElementById('imgSecundaria').src = imagen;
 }
 
 peticionAJAXdatosUser();
