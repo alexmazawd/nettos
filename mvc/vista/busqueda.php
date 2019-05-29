@@ -37,8 +37,8 @@
                 </div>
                 <!--logo end-->
                 <div class="search-bar">
-                    <form>
-                        <input type="text" name="search" placeholder="Buscar...">
+                    <form action="index.php?pagina=busqueda">
+                        <input type="text" id="search" name="search" placeholder="Buscar...">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>

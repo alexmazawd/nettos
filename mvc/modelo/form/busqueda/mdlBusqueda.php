@@ -15,6 +15,14 @@ class mdlBusqueda extends Singleton
             redirectTo('index.php?pagina=login');
         }
 
+        setcookie('search','', time()-36000);
+
+        if (isset($_POST['search'])){
+
+            setcookie('search', getPost('search'), 0);
+
+        }
+
     }
 
     public function onCargarVista($path)

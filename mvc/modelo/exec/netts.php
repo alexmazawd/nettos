@@ -18,7 +18,7 @@ class netts{
 
             ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.nombre","usuarios.apellidos"],
 
-            ["netts.id_usuario[=]" => $id]);
+            ["netts.id_usuario[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"]]);
 
         $database->closeConnection();
         return $datos;
@@ -51,10 +51,11 @@ class netts{
 
             ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.nombre","usuarios.apellidos"],
 
-            ["seguidores.id_usuario_seguidor[=]" => $id],
+            ["seguidores.id_usuario_seguidor[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"]]
 
-            ["ORDER" => ["netts.fecha_pub" => "DESC"]]
-            );
+
+
+        );
 
         $database->closeConnection();
 

@@ -41,7 +41,7 @@ class favs
 
             ["favs.id_nett","usuarios.nombre","usuarios.apellidos","favs.fecha_fav"],
 
-            ["netts.id_usuario[=]" => $id]
+            ["netts.id_usuario[=]" => $id,"ORDER" => ["favs.fecha_fav" => "DESC"]]
         );
 
         $database->closeConnection();
