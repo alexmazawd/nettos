@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+          <!-- Se añade js para cargar los usuarios -->
+          <script defer src="js/busquedaUsuarios.js"></script>
+
 </head>
 
 
@@ -154,5 +157,3 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-

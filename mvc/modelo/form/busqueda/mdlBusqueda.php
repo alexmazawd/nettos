@@ -20,9 +20,9 @@ class mdlBusqueda extends Singleton
         if (isset($_POST['search'])){
 
             setcookie('search', getPost('search'), 0);
-
         }
 
+        redirectTo('index.php?pagina=busqueda');
     }
 
     public function onCargarVista($path)

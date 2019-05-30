@@ -10,11 +10,13 @@ require_once "../include.php";
 
 $response = $_POST['nett'];//Espera un post con nombre nett que debe tener el id del nett
 
+$doc = json_decode($response, true);
+
+$id=$doc["id_nett"];
+
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 
-    $id = $_COOKIE['logged'];
-
-    $likes= favs::countLikesNett($id);
+    $likes = favs::countLikesNett($id);
 
 } else {
 

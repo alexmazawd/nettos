@@ -40,7 +40,7 @@
                     </div>
                     <!--logo end-->
                     <div class="search-bar">
-                        <form>
+                        <form action="?pagina=busqueda">
                             <input type="text" id="nombre" name="nombre" placeholder="Buscar...">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
