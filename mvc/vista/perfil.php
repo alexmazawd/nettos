@@ -44,7 +44,7 @@
                     </div>
                     <!--logo end-->
                     <div class="search-bar">
-                        <form>
+                        <form action="index.php?pagina=busqueda">
                             <input type="text" name="search" placeholder="Buscar...">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
@@ -108,10 +108,13 @@
                                         <!--user-pro-img end-->
                                         <div class="user_pro_status">
 
-                                            <ul class="flw-hr">
-                                                <li><a href="#" title="" class="flww"><i class="la la-plus"></i>
-                                                        Seguir</a></li>
-
+                                            <ul class="flw-hr" id="contBtnSeguir">
+                                                <li>
+                                                    <a href="#" title="" class="flww">
+                                                        <i class="la la-plus" id="simbSeguir"></i>
+                                                        <span id="txtSeguir">Seguir</span>
+                                                    </a>
+                                                </li>
                                             </ul>
                                             <ul class="flw-status">
                                                 <li>
@@ -152,7 +155,7 @@
                                             <span id="descripcion"></span>
                                         </div>
                                         <br><br>
-                                        <div class="post-topbar">
+                                        <div class="post-topbar" id="publicarNett">
                                             <div class="user-picy">
                                                 <img id="imgSecundaria" src="" alt="Foto de perfil del usuario">
                                             </div>

@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+          <!-- Se añade js para cargar los usuarios -->
+          <script defer src="js/busquedaUsuarios.js"></script>
+
 </head>
 
 
@@ -37,8 +40,8 @@
                 </div>
                 <!--logo end-->
                 <div class="search-bar">
-                    <form>
-                        <input type="text" name="search" placeholder="Buscar...">
+                    <form action="index.php?pagina=busqueda">
+                        <input type="text" id="search" name="search" placeholder="Buscar...">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -154,5 +157,3 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-

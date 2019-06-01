@@ -29,6 +29,12 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 
     $id = $_COOKIE['logged'];
 
+    if (isset($_COOKIE['idPerfil'])){
+
+        $id=$_COOKIE['idPerfil'];
+
+    }
+
     $netts = netts::searchNettsUser($id);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
 
 } else {

@@ -37,7 +37,7 @@
                 </div>
                 <!--logo end-->
                 <div class="search-bar">
-                    <form>
+                    <form action="index.php?pagina=busqueda">
                         <input type="text" name="search" placeholder="Buscar...">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
@@ -131,17 +131,17 @@
                                                     <span>Tiempo que se publico la notificacion</span>
                                                 </div><!--notification-info -->
                                             </div><!--notfication-details end-->
-                                            
+
                                         </div><!--notifications-list end-->
                                     </div><!--acc-setting end-->
                                 </div>
 
-                            
+
 
                     </div>
-                    
+
                 </div>
-           
+
 
 
 
@@ -180,5 +180,3 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-

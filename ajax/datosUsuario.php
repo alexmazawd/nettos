@@ -17,6 +17,9 @@ require_once "../include.php";
   ]
 }*/
 
+$objeto_json = new stdClass();
+
+$objeto_json->usuarioOnline=true;
 
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 
@@ -25,6 +28,8 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
     if (isset($_COOKIE['idPerfil'])){
 
         $id=$_COOKIE['idPerfil'];
+
+        $objeto_json->usuarioOnline=false;
 
     }
 
@@ -46,7 +51,6 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 
 //Utilizamos stdClass, clase vacía sin métodos ni propiedades que nos permite construir objetos genéricos
 
-$objeto_json = new stdClass();
 
 $objeto_json->usuario=$user;
 

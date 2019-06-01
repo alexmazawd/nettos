@@ -8,6 +8,12 @@
  * Released under the MIT license
  */
 
+
+class Raw {
+    public $map;
+    public $value;
+}
+
 class Medoo extends Singleton
 {
 	public $pdo;
