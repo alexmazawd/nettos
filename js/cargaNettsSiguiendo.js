@@ -1,6 +1,5 @@
 var peti_xhr;
 var xhr_favs = new XMLHttpRequest();
-var nFavs = 0;
 
 function peticionAJAXNettsSiguiendo() {
 
@@ -32,7 +31,7 @@ function gestionarRespuestaNettsSiguiendo() {
         let nombre = netts[i].nombre + " " + netts[i].apellidos;
         let contenido = netts[i].contenido;
         let id = netts[i].id_usuario;
-
+        let favs = netts[i].likes;
         let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt">' +
                      '<a href="?pagina=perfil&id=' + id + '"><img src="' + fotoUser +
                      '" alt="Imagen del usuario"></a><div class="usy-name">' +
@@ -46,7 +45,7 @@ function gestionarRespuestaNettsSiguiendo() {
         }
 
         cuadro += '<div class="job-status-bar"><ul class="like-com"><li>' +
-        '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + nFavs +
+        '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + favs +
         '</span></li></ul></div></div>';
 
         document.getElementById('seccionNetts').innerHTML += cuadro;

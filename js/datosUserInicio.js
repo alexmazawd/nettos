@@ -55,8 +55,8 @@ function gestionarRespuestaDatosUser() {
     document.getElementById('nSiguiendo').innerHTML = siguiendo;
     document.getElementById('nSeguidores').innerHTML = seguidores;
     document.getElementById('nNetts').innerHTML = netts;
-    document.getElementById('nMgs').innerHTML = favs;
     document.getElementById('imgSecundaria').src = imagen;
+    document.getElementById('nMgs').innerHTML = favs;
 }
 
 peticionAJAXdatosUser();
