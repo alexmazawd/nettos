@@ -32,12 +32,10 @@ function gestionarRespuestaNettsSiguiendo() {
         let contenido = netts[i].contenido;
         let id = netts[i].id_usuario;
         let favs = netts[i].likes;
-        let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt">' +
-                     '<a href="?pagina=perfil&id=' + id + '"><img src="' + fotoUser +
-                     '" alt="Imagen del usuario"></a><div class="usy-name">' +
-                     '<h3><a href="?pagina=perfil&id=' + id + '">' + nombre + '</a></h3>' +
-                     '</div></div></div><div class="job_descp"><p>' + contenido + '</p>' +
-                     '</div>';
+        let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
+            fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
+            '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@sagitario</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
+            '</div>';
 
         if (imagen) {
 
