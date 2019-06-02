@@ -85,31 +85,34 @@
     <section class="profile-account-setting">
         <div class="container">
                 <div class="row">
-                    <div class="col-lg-2"></div>
 
-                    <div class="col-lg-8">
+
+
+
+
+                    <div class="col-lg-6">
 
                             <!--EDITAR PERFIL-->
 
                             <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
                                     <div class="acc-setting">
-                                        <h3>Notificaciones</h3>
+                                        <h3>Nuevos seguidores</h3>
                                         <div class="notifications-list">
                                             <div class="notfication-details">
                                                 <div class="noty-user-img">
                                                     <img src="images/perfil.jpg" alt="">
                                                 </div>
                                                 <div class="notification-info">
-                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
+                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
                                                         <span>Tiempo que se publico la notificacion</span>
-                                                    </div><!--notification-info -->
+                                                </div><!--notification-info -->
                                             </div><!--notfication-details end-->
                                             <div class="notfication-details">
                                                 <div class="noty-user-img">
                                                     <img src="images/logo_principal_blanco.png" alt="">
                                                 </div>
                                                 <div class="notification-info">
-                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
+                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
                                                         <span>Tiempo que se publico la notificacion</span>
                                                     </div><!--notification-info -->
                                             </div><!--notfication-details end-->
@@ -118,27 +121,71 @@
                                                     <img src="images/user-pro-img.png" alt="">
                                                 </div>
                                                 <div class="notification-info">
-                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
+                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
                                                         <span>Tiempo que se publico la notificacion</span>
                                                     </div><!--notification-info -->
-                                            </div><!--notfication-details end-->
-                                            <div class="notfication-details">
-                                                <div class="noty-user-img">
-                                                    <img src="images/logo_principal.png" alt="">
-                                                </div>
-                                                <div class="notification-info">
-                                                    <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN/TE HA SEGUIDO/ME GUSTA/ETC</h3>
-                                                    <span>Tiempo que se publico la notificacion</span>
-                                                </div><!--notification-info -->
                                             </div><!--notfication-details end-->
 
                                         </div><!--notifications-list end-->
                                     </div><!--acc-setting end-->
                                 </div>
 
+                    </div>
+
+
+                        <div class="col-lg-6">
+
+                            <!--EDITAR PERFIL-->
+
+                            <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
+                                <div class="acc-setting">
+                                    <h3>Nuevos Favs</h3>
+                                    <div class="notifications-list">
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/perfil.jpg" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
+                                                <span>Tiempo que se publico la notificacion</span>
+                                            </div><!--notification-info -->
+                                        </div><!--notfication-details end-->
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/logo_principal_blanco.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
+                                                <span>Tiempo que se publico la notificacion</span>
+                                            </div><!--notification-info -->
+                                        </div><!--notfication-details end-->
+                                        <div class="notfication-details">
+                                            <div class="noty-user-img">
+                                                <img src="images/user-pro-img.png" alt="">
+                                            </div>
+                                            <div class="notification-info">
+                                                <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
+                                                <span>Tiempo que se publico la notificacion</span>
+                                            </div><!--notification-info -->
+                                        </div><!--notfication-details end-->
+
+                                    </div><!--notifications-list end-->
+                                </div><!--acc-setting end-->
+                            </div>
+
+
+
+                        </div>
+
+
+
 
 
                     </div>
+
+
+
+
 
                 </div>
 
@@ -172,6 +219,7 @@
     <!--FIN FOOTER-->
 
 </div><!--theme-layout end-->
+</body>
 
 
 
