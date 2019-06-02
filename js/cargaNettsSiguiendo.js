@@ -11,7 +11,7 @@ function peticionAJAXNettsSiguiendo() {
 
         peti_xhr.open("POST", "ajax/cargaNettsSiguiendo.php", true);
 
-        peti_xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        peti_xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
         peti_xhr.send(null);
 
@@ -32,19 +32,20 @@ function gestionarRespuestaNettsSiguiendo() {
         let contenido = netts[i].contenido;
         let id = netts[i].id_usuario;
         let favs = netts[i].likes;
-        let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
-            fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
-            '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@sagitario</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
+        let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt">' +
+            '<a href="?pagina=perfil&id='+id+ '"> <img src="' +
+            fotoUser + '" alt="Imagen del usuario"></a><div class="usy-name"><h3><a href="?pagina=perfil&id='+id+'"> ' + nombre +
+            '</a></h3></div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@sagitario</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
             '</div>';
 
         if (imagen) {
 
-            cuadro += "<img src='images/" + imagen + "' class='' alt='Imagen'>";
+            cuadro += "<img class='fotoNett' src='images/" + imagen + "' class='' alt='Imagen'>";
         }
 
         cuadro += '<div class="job-status-bar"><ul class="like-com"><li>' +
-        '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + favs +
-        '</span></li></ul></div></div>';
+            '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + favs +
+            '</span></li></ul></div></div>';
 
         document.getElementById('seccionNetts').innerHTML += cuadro;
     }
