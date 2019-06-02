@@ -14,11 +14,11 @@ class netts{
         $database->openConnection(MYSQL_CONFIG);
         $datos = $database->select("netts",
 
-            ["[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
+            ["[><]usuarios"=>["netts.id_usuario"=>"id_usuario"],"[>]favs"=>["netts.id_nett"=>"id_nett"]],
 
-            ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.nombre","usuarios.apellidos"],
+            ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.nombre","usuarios.apellidos","likes"=>Medoo::raw('count(favs.id_nett)')],
 
-            ["netts.id_usuario[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"]]);
+            ["netts.id_usuario[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"], "GROUP" => "netts.id_nett"]);
 
         $database->closeConnection();
         return $datos;
@@ -39,6 +39,20 @@ class netts{
         return $datos;
     }
 
+    /*
+     *    $database = Conexion::getInstance();
+        $database->openConnection(MYSQL_CONFIG);
+        $sql = "insert into usuarios (nombre) values (:nombre)";
+        $pdo = $database->getPdo();
+        $query = $pdo->prepare($sql);
+        $param = array(":nombre" => $nombre);
+        $query->execute($param);
+        $datos = $query->rowCount() > 0 ? true : false;
+        $database->closeConnection();
+        return $datos;
+     *
+     * */
+
     public static function searchNettsSeguidor($id)
     {
         $database = medoo::getInstance();
@@ -47,11 +61,11 @@ class netts{
 
         $datos = $database->select("netts",
 
-            ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"],"[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
+            ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"],"[><]usuarios"=>["netts.id_usuario"=>"id_usuario"],"[>]favs"=>["netts.id_nett"=>"id_nett"]],
 
-            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.nombre","usuarios.apellidos"],
+            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.nombre","usuarios.apellidos","likes"=>Medoo::raw('count(favs.id_nett)')],
 
-            ["seguidores.id_usuario_seguidor[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"]]
+            ["seguidores.id_usuario_seguidor[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"], "GROUP" => "netts.id_nett"]
 
 
 
