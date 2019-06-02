@@ -22,13 +22,14 @@ function gestionarRespuestaNetts() {
 
     let JsonObj = JSON.parse(http_peti.responseText);
     let netts = JsonObj.listaNetts;
-
-    for (let i = netts.length - 1; i >= 0; i--) {
+    console.log(netts);
+    for (let i = 0; i < 50; i++) {
 
         let fotoUser = "images/" + netts[i].foto;
         let imagen = netts[i].imagen;
         let nombre = netts[i].nombre + " " + netts[i].apellidos;
         let contenido = netts[i].contenido;
+
         let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
                      fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
                      '</div></div></div><div class="job_descp"><p>' + contenido + '</p>' +
