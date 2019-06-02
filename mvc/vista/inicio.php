@@ -98,8 +98,11 @@
                                                 </div>
                                             </div>
                                             <!--username-dt end-->
+
+
                                             <div class="user-specs">
                                                 <h3 id="nUsuario"></h3>
+                                                <span id="userNa">@sagitario</span><br><br>
                                                 <span id="descripcion"></span>
                                             </div>
                                         </div>

@@ -105,6 +105,7 @@
                                         <div class="user-pro-img">
                                             <img id="imgPrincipal" src="" alt="Foto de perfil del usuario">
                                         </div>
+
                                         <!--user-pro-img end-->
                                         <div class="user_pro_status">
 
@@ -116,6 +117,7 @@
                                                     </a>
                                                 </li>
                                             </ul>
+                                            <span id="userNa">@sagitario</span><br><br>
                                             <ul class="flw-status">
                                                 <li>
                                                     <span>Siguiendo</span>

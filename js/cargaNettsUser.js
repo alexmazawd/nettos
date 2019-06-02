@@ -32,7 +32,7 @@ function gestionarRespuestaNetts() {
 
         let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
                      fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
-                     '</div></div></div><div class="job_descp"><p>' + contenido + '</p>' +
+                     '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@sagitario</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
                      '</div>';
 
         if (imagen) {
