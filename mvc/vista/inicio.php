@@ -30,6 +30,8 @@
         <script defer src="js/datosUserInicio.js"></script>
         <!-- Se añade js para sacar datos del usuario -->
         <script defer src="js/cargaNettsSiguiendo.js"></script>
+        <!-- Se añade js para dar o quitar fav -->
+        <script async src="js/darQuitarFav.js"></script>
 
         <!--INICIO DEL HEADER-->
         <header>
@@ -102,7 +104,7 @@
 
                                             <div class="user-specs">
                                                 <h3 id="nUsuario"></h3>
-                                                <span id="userNa">@sagitario</span><br><br>
+                                                <span id="userNa"></span><br><br>
                                                 <span id="descripcion"></span>
                                             </div>
                                         </div>

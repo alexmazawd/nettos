@@ -82,7 +82,7 @@ class seguidores
 
             ["[><]usuarios"=>["seguidores.id_usuario_seguido"=>"id_usuario"]],
 
-            ["usuarios.nombre","usuarios.apellidos","seguidores.fecha_seg","usuarios.foto"],
+            ["usuarios.nombre","usuarios.apellidos","seguidores.fecha_seg","usuarios.foto","usuarios.id_usuario"],
 
             ["seguidores.id_usuario_seguidor[=]" => $id,"ORDER" => ["seguidores.fecha_seg" => "DESC"]]
         );

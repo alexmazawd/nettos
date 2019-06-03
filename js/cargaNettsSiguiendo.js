@@ -32,10 +32,11 @@ function gestionarRespuestaNettsSiguiendo() {
         let contenido = netts[i].contenido;
         let id = netts[i].id_usuario;
         let favs = netts[i].likes;
+        let user = netts[i].usuario;
         let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt">' +
             '<a href="?pagina=perfil&id='+id+ '"> <img src="' +
             fotoUser + '" alt="Imagen del usuario"></a><div class="usy-name"><h3><a href="?pagina=perfil&id='+id+'"> ' + nombre +
-            '</a></h3></div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@sagitario</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
+            '</a></h3></div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+ user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
             '</div>';
 
         if (imagen) {
@@ -43,7 +44,7 @@ function gestionarRespuestaNettsSiguiendo() {
             cuadro += "<img class='fotoNett' src='images/" + imagen + "' class='' alt='Imagen'>";
         }
 
-        cuadro += '<div class="job-status-bar"><ul class="like-com"><li>' +
+        cuadro += '<div class="job-status-bar" id="txtFav"><ul class="like-com" id="icoFav"><li>' +
             '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + favs +
             '</span></li></ul></div></div>';
 

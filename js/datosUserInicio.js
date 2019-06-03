@@ -41,6 +41,7 @@ function gestionarRespuestaDatosUser() {
     let favs = datos.favs;
     let netts = datos.netts;
     let siguiendo = datos.siguiendo;
+    let usuario = "@" + datos.usuario[0].usuario;
 
     document.getElementById('nUsuario').innerHTML = nombre + " " + apellidos;
     if (descripcion) {
@@ -51,6 +52,7 @@ function gestionarRespuestaDatosUser() {
         document.getElementById('descripcion').innerHTML = "Hey there! I'm using Nettos!";
     }
 
+    document.getElementById('userNa').innerHTML = usuario;
     document.getElementById('imgPrincipal').src = imagen;
     document.getElementById('nSiguiendo').innerHTML = siguiendo;
     document.getElementById('nSeguidores').innerHTML = seguidores;

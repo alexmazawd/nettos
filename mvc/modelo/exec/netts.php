@@ -63,7 +63,7 @@ class netts{
 
             ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"],"[><]usuarios"=>["netts.id_usuario"=>"id_usuario"],"[>]favs"=>["netts.id_nett"=>"id_nett"]],
 
-            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.nombre","usuarios.apellidos","likes"=>Medoo::raw('count(favs.id_nett)')],
+            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.usuario","usuarios.nombre","usuarios.apellidos","likes"=>Medoo::raw('count(favs.id_nett)')],
 
             ["seguidores.id_usuario_seguidor[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"], "GROUP" => "netts.id_nett"]
 

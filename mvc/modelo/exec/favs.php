@@ -39,7 +39,7 @@ class favs
 
             ["[><]netts"=>["favs.id_nett"=>"id_nett"],"[><]usuarios"=>["favs.id_usuario"=>"id_usuario"]],
 
-            ["favs.id_nett","usuarios.nombre","usuarios.apellidos","favs.fecha_fav"],
+            ["favs.id_nett","usuarios.nombre","usuarios.apellidos","usuarios.id_usuario","usuarios.foto","favs.fecha_fav","netts.contenido"],
 
             ["netts.id_usuario[=]" => $id,"ORDER" => ["favs.fecha_fav" => "DESC"]]
         );

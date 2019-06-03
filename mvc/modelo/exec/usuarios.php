@@ -85,7 +85,7 @@ class usuarios
         $database->openConnection(MYSQL_CONFIG);
         $datos = $database->select('usuarios',
 
-            ['nombre','apellidos','fecha_nac','bio','foto','fecha_reg'],
+            ['usuario','nombre','apellidos','fecha_nac','bio','foto','fecha_reg'],
 
 
             ["usuarios.id_usuario[=]" => $id]);

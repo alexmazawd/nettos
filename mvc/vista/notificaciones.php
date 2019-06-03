@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+          <script defer src="js/cargarNotificaciones.js"></script>
+
 </head>
 
 
@@ -97,34 +99,7 @@
                             <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
                                     <div class="acc-setting">
                                         <h3>Nuevos seguidores</h3>
-                                        <div class="notifications-list">
-                                            <div class="notfication-details">
-                                                <div class="noty-user-img">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                </div>
-                                                <div class="notification-info">
-                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
-                                                        <span>Tiempo que se publico la notificacion</span>
-                                                </div><!--notification-info -->
-                                            </div><!--notfication-details end-->
-                                            <div class="notfication-details">
-                                                <div class="noty-user-img">
-                                                    <img src="images/logo_principal_blanco.png" alt="">
-                                                </div>
-                                                <div class="notification-info">
-                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
-                                                        <span>Tiempo que se publico la notificacion</span>
-                                                    </div><!--notification-info -->
-                                            </div><!--notfication-details end-->
-                                            <div class="notfication-details">
-                                                <div class="noty-user-img">
-                                                    <img src="images/user-pro-img.png" alt="">
-                                                </div>
-                                                <div class="notification-info">
-                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
-                                                        <span>Tiempo que se publico la notificacion</span>
-                                                    </div><!--notification-info -->
-                                            </div><!--notfication-details end-->
+                                        <div class="notifications-list" id="cuadroSeguidores">
 
                                         </div><!--notifications-list end-->
                                     </div><!--acc-setting end-->
@@ -140,35 +115,8 @@
                             <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
                                 <div class="acc-setting">
                                     <h3>Nuevos Favs</h3>
-                                    <div class="notifications-list">
-                                        <div class="notfication-details">
-                                            <div class="noty-user-img">
-                                                <img src="images/perfil.jpg" alt="">
-                                            </div>
-                                            <div class="notification-info">
-                                                <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
-                                                <span>Tiempo que se publico la notificacion</span>
-                                            </div><!--notification-info -->
-                                        </div><!--notfication-details end-->
-                                        <div class="notfication-details">
-                                            <div class="noty-user-img">
-                                                <img src="images/logo_principal_blanco.png" alt="">
-                                            </div>
-                                            <div class="notification-info">
-                                                <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
-                                                <span>Tiempo que se publico la notificacion</span>
-                                            </div><!--notification-info -->
-                                        </div><!--notfication-details end-->
-                                        <div class="notfication-details">
-                                            <div class="noty-user-img">
-                                                <img src="images/user-pro-img.png" alt="">
-                                            </div>
-                                            <div class="notification-info">
-                                                <h3><a href="#" title="">NOMBRE DE USUARIO.</a> TIPO DE NOTIFICACIÓN</h3>
-                                                <span>Tiempo que se publico la notificacion</span>
-                                            </div><!--notification-info -->
-                                        </div><!--notfication-details end-->
-
+                                    <div class="notifications-list" id="cuadroFavs">
+                                        
                                     </div><!--notifications-list end-->
                                 </div><!--acc-setting end-->
                             </div>
