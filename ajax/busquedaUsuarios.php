@@ -5,11 +5,11 @@ require_once "../include.php";
 
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion
 
-    $nombre=$_COOKIE['search'];
+    $nombre=$_COOKIE['busqueda'];
 
     }
 
-    $users = usuarios::searchNombreDB($nombre);
+    $users = usuarios::searchNombreDB('Veni');
 
 //Utilizamos stdClass, clase vacía sin métodos ni propiedades que nos permite construir objetos genéricos
 

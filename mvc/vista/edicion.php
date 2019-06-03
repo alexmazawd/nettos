@@ -44,10 +44,16 @@
                 </div>
                 <!--logo end-->
                 <div class="search-bar">
-                    <form action="index.php?pagina=busqueda">
-                        <input type="text" name="search" placeholder="Buscar...">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+
+                    <!--inicio barra busqueda-->
+
+                    <form action="index.phpindex.php?pagina=edicion" method="post">
+                        <input type="text" id="nombre" name="nombre" placeholder="Buscar...">
+                        <button type="submit" id="busqueda" name="busqueda"><i class="fa fa-search"></i></button>
                     </form>
+
+                    <!--final de barra busqueda-->
+
                 </div>
                 <!--search-bar end-->
                 <nav>

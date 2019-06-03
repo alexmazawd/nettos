@@ -12,7 +12,15 @@ class mdlInicio extends Singleton
 
         if (!isset($_COOKIE['logged'])) {
             // Cambiamos el paso
-            redirectTo('index.php?pagina=login');
+         redirectTo('index.php?pagina=login');
+        }
+
+        if(!is_null(getPost('busqueda'))){
+
+         setcookie('busqueda',getPost('nombre'), 0);
+
+         redirectTo('index.php?pagina=busqueda');
+
         }
 
         setcookie('idPerfil','', time()-36000);
@@ -36,6 +44,16 @@ class mdlInicio extends Singleton
             }
 
         }
+
+
+     /*   setcookie('search','', time()-36000);
+
+        if (isset($_POST['search'])){
+
+            setcookie('search', getPost('search'), 0);
+        }
+
+        redirectTo('index.php?pagina=busqueda'); */
     }
 
 

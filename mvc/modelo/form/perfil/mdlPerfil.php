@@ -13,7 +13,35 @@ class mdlPerfil extends Singleton
             redirectTo('index.php?pagina=login');
         }
 
+        if(!is_null(getPost('busqueda'))){
+
+            setcookie('busqueda',getPost('nombre'), 0);
+
+            redirectTo('index.php?pagina=busqueda');
+
+        }
+
         setcookie('idPerfil','', time()-36000);
+
+        if (isset($_FILES['imgNett'])) {
+
+            if ($_FILES['imgNett']['name'] != '') {
+
+                $nombre = $_FILES['imgNett']['name'];
+
+                $tmp = $_FILES['imgNett']['tmp_name'];
+
+                $destino = 'images';
+
+                //Movera el archivo del folder temporal a una nueva ruta
+
+                move_uploaded_file($tmp, $destino . '/' . $nombre);
+
+                //se hace un if para comprobar que se ha insertado una imagen, de lo contrario se produciria un error en la logica del programa
+
+            }
+
+        }
 
         if (isset($_GET['id'])){
 

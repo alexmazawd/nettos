@@ -10,6 +10,14 @@ class mdlEdicion extends Singleton
 
         $id = $_COOKIE['logged']; //Inicializo una variable con el valor de id del usuario
 
+        if(!is_null(getPost('busqueda'))){
+
+            setcookie('busqueda',getPost('nombre'), 0);
+
+            redirectTo('index.php?pagina=busqueda');
+
+        }
+
         if (is_null(getPost('edicion'))) { //En este if se entra cuando el usuario no ha enviado el form por primera vez y es el donde se recuperan los datos
 
             $datos = usuarios::searchAllByIdDB($id); //rescato los datos del usuario para autocompletar el formulario
