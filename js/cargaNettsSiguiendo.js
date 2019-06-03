@@ -36,7 +36,7 @@ function gestionarRespuestaNettsSiguiendo() {
         let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt">' +
             '<a href="?pagina=perfil&id='+id+ '"> <img src="' +
             fotoUser + '" alt="Imagen del usuario"></a><div class="usy-name"><h3><a href="?pagina=perfil&id='+id+'"> ' + nombre +
-            '</a></h3></div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+ user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
+            '</a></h3></div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
             '</div>';
 
         if (imagen) {

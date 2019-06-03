@@ -112,13 +112,13 @@
 
                                             <ul class="flw-hr" id="contBtnSeguir">
                                                 <li id="insertaBtn">
-                                                    <button type="button" id="btnSeguir" onclick="peticionAJAXRelacionUser()">
+                                                    <button class="bot" type="button" id="btnSeguir" onclick="peticionAJAXRelacionUser()">
                                                         <i class="la la-plus" id="simbSeguir"></i>
                                                         <span id="txtSeguir">Seguir</span>
                                                     </button>
                                                 </li>
                                             </ul>
-                                            <span id="userNa">@sagitario</span><br><br>
+                                            <span id="userNa"></span><br><br>
                                             <!--<ul class="flw-status">
                                                 <li>
                                                     <span>Siguiendo</span>
