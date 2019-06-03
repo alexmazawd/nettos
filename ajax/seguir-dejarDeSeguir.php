@@ -37,5 +37,3 @@ if ($relacion) {
     seguidores::seguirUsuario($id_seguidor,$id_siguiendo);
 
 }
-
-

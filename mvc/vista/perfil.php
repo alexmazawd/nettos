@@ -95,7 +95,6 @@
 
         </section>
 
-
         <main>
             <div class="main-section">
                 <div class="container">
@@ -112,11 +111,11 @@
                                         <div class="user_pro_status">
 
                                             <ul class="flw-hr" id="contBtnSeguir">
-                                                <li>
-                                                    <a title="" href="#" class="flww" onclick="peticionAJAXRelacionUser()">
+                                                <li id="insertaBtn">
+                                                    <button type="button" id="btnSeguir" onclick="peticionAJAXRelacionUser()">
                                                         <i class="la la-plus" id="simbSeguir"></i>
                                                         <span id="txtSeguir">Seguir</span>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                             </ul>
                                             <span id="userNa">@sagitario</span><br><br>
