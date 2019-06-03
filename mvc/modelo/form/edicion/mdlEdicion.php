@@ -23,8 +23,8 @@ class mdlEdicion extends Singleton
                 $toValidate = $datos[0];
 
                 $rules = array( //se hace uso de las rules para la recuperacion de datos
-                    'nombre' => 'required|number_alpha',
-                    'apellidos' => 'required|number_alpha',
+                    'nombre' => 'required|alpha_space',
+                    'apellidos' => 'required|alpha_space',
                     'fecha_nac' => 'required',
                     'bio' => '',
                     'foto' => ''
@@ -44,8 +44,8 @@ class mdlEdicion extends Singleton
             $val = Validacion::getInstance();
             $toValidate = $_POST;
             $rules = array(
-                'nombre' => 'required|number_alpha',
-                'apellidos' => 'required|number_alpha',
+                'nombre' => 'required|alpha_space',
+                'apellidos' => 'required|alpha_space',
                 'fecha_nac' => 'required',
                 'bio' => '',
                 'foto' => ''

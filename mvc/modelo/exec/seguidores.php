@@ -109,7 +109,7 @@ class seguidores
 
     }
 
-    public static function seguirUsuario($idUser,$idUsuarioASeguir) /* Funcion que inserta los likes dados a una publicacion*/
+    public static function seguirUsuario($idUser,$idUsuarioASeguir) /* Funcion que inserta los usuarios que se siguen*/
     {
         $database = medoo::getInstance();
         $database->openConnection(MYSQL_CONFIG);
@@ -120,5 +120,19 @@ class seguidores
         $database->closeConnection();
         return $datos;
     }
+
+    public static function seguirSelf($idUser)
+
+    {
+        $database = medoo::getInstance();
+        $database->openConnection(MYSQL_CONFIG);
+        $datos = $database->insert('seguidores',[
+            "id_usuario_seguidor"=>$idUser,
+            "id_usuario_seguido" => $idUser
+        ]);
+        $database->closeConnection();
+        return $datos;
+    }
+
 
 }
