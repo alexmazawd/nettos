@@ -125,23 +125,42 @@
                                                 </li>
                                             </ul>
                                             <span id="userNa">@sagitario</span><br><br>
-                                            <ul class="flw-status">
+                                            <!--<ul class="flw-status">
                                                 <li>
                                                     <span>Siguiendo</span>
                                                     <b id="nSiguiendo"></b>
-                                                </li>
+                                                </li><br><br>
                                                 <li>
                                                     <span>Seguidores</span>
                                                     <b id="nSeguidores"></b>
-                                                </li>
+                                                </li><br><br>
                                                 <li>
                                                     <span>Netts</span>
                                                     <b id="nNetts"></b>
-                                                </li>
+                                                </li><br><br>
 
                                                 <li>
                                                     <span>MG</span>
-                                                    <b id="nMgs"></b>
+                                                    <b id="nMgs">0</b>
+                                                </li>
+
+                                            </ul>-->
+                                            <ul class="user-fw-status">
+                                                <li>
+                                                    <h4>Netts</h4>
+                                                    <span id="nNetts"></span>
+                                                </li>
+                                                <li>
+                                                    <h4>SEGUIENDO</h4>
+                                                    <span id="nSiguiendo"></span>
+                                                </li>
+                                                <li>
+                                                    <h4>SEGUIDORES</h4>
+                                                    <span id="nSeguidores"></span>
+                                                </li>
+                                                <li>
+                                                    <h4>MG</h4>
+                                                    <span id="nMgs"></span>
                                                 </li>
 
                                             </ul>
