@@ -1203,13 +1203,10 @@ main {
 }
 
 .usy-dt img {
-    /*-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-ms-border-radius: 100px;
-	-o-border-radius: 100px;
-	border-radius: 100px;
-	width: 50px;*/
-
+    -webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-ms-border-radius: 150px;
+	-o-border-radius: 150px;
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -5153,12 +5150,15 @@ a:hover {
 
 .noty-user-img img {
 
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
-    width: 100%;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 150px;
+
 }
 
 .notification-info {
