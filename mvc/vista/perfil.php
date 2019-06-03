@@ -24,7 +24,8 @@
     <script defer src="js/datosUserInicio.js"></script>
     <!-- Se añade js para cargar netts del usuario -->
     <script defer src="js/cargaNettsuser.js"></script>
-
+    <!-- Se añade js para seguir/dejar de seguir -->
+    <script async src="js/seguirDejarSeguir.js"></script>
 
 
 </head>
@@ -112,7 +113,7 @@
 
                                             <ul class="flw-hr" id="contBtnSeguir">
                                                 <li>
-                                                    <a href="#" title="" class="flww">
+                                                    <a title="" href="#" class="flww" onclick="peticionAJAXRelacionUser()">
                                                         <i class="la la-plus" id="simbSeguir"></i>
                                                         <span id="txtSeguir">Seguir</span>
                                                     </a>

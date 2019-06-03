@@ -1,19 +1,28 @@
-var peti_http;
+var xhr_ru;
 
-function peticionAJAXNettsuser() {
+function peticionAJAXRelacionUser() {
 
-    peti_http = new XMLHttpRequest();
+    xhr_ru = new XMLHttpRequest();
 
-    if (peti_http) {
+    if (xhr_ru) {
 
-        peti_http.onload = gestionarRespuestaSeguir;
+        xhr_ru.onload = gestionarRespuestaRelacionUser;
 
-        peti_http.open("POST", "ajax/seguir-dejarDeSeguir.php", true);
+        xhr_ru.open("POST", "ajax/relacionUsers.php", true);
 
-        peti_http.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        let json = "id_usuario=" + creaJsonRU();
 
-        peti_http.send(null);
+        xhr_ru.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+        xhr_ru.send(null);
 
     }
 
+}
+
+function creaJsonRU() {
+
+    let url = window.location.pathname;
+
+    console.log(url);
 }
