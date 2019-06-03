@@ -1,4 +1,7 @@
 var xhr_ru;
+var xhr_seguir;
+var sigue;
+var id;
 
 function peticionAJAXRelacionUser() {
 
@@ -14,7 +17,7 @@ function peticionAJAXRelacionUser() {
 
         xhr_ru.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 
-        xhr_ru.send(null);
+        xhr_ru.send(json);
 
     }
 
@@ -22,7 +25,57 @@ function peticionAJAXRelacionUser() {
 
 function creaJsonRU() {
 
-    let url = window.location.pathname;
+    let url = window.location.href;
+    id = url.substr(-1);
+    let obj = {
+        id: id
+    };
 
-    console.log(url);
+    return JSON.stringify(obj);
+}
+
+function gestionarRespuestaRelacionUser() {
+
+    resp = JSON.parse(xhr_ru.responseText);
+    if (resp.sigue > 0) {
+        sigue = true
+    } else {
+        sigue = false
+    }
+    peticionAJAXSeguirDejarSeguir();
+}
+
+function peticionAJAXSeguirDejarSeguir() {
+
+    xhr_seguir = new XMLHttpRequest();
+
+    if (xhr_seguir) {
+
+        xhr_seguir.onload = gestionarRespuestaSeguirDejarSeguir;
+
+        xhr_seguir.open("POST", "ajax/seguir-dejarDeSeguir.php", true);
+
+        let json = "relacion=" + creaJsonSeguir();
+
+        xhr_seguir.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+        xhr_seguir.send(json);
+
+    }
+
+}
+
+function gestionarRespuestaSeguirDejarSeguir() {
+
+    console.log("OK!");
+}
+
+function creaJsonSeguir() {
+
+    let obj = {
+        id: id,
+        siguen: sigue
+    };
+
+    return JSON.stringify(obj);
 }
