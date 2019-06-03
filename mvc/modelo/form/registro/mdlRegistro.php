@@ -93,6 +93,10 @@ class mdlRegistro extends Singleton
 
                     codigos::removeDB($invitacion); //se elimina el codigo de invitacion creado
 
+                    $id=usuarios::searchIdDB($usuario);
+
+                    seguidores::seguirSelf($id);
+
                     redirectTo('index.php?pagina=edicion');
 
                 } else{

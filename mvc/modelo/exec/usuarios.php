@@ -69,8 +69,8 @@ class usuarios
 
             ["OR" =>[
 
-                "nombre[=]" => $nombre,
-                "apellidos[=]" => $nombre
+                "nombre[~]" => $nombre,
+                "apellidos[~]" => $nombre
     ]
             ]);
 

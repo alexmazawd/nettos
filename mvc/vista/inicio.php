@@ -42,10 +42,16 @@
                     </div>
                     <!--logo end-->
                     <div class="search-bar">
-                        <form action="?pagina=busqueda">
+
+                    <!--inicio barra busqueda-->
+                        <form action="index.php?pagina=inicio" method="post">
                             <input type="text" id="nombre" name="nombre" placeholder="Buscar...">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <button type="submit" id="busqueda" name="busqueda"><i class="fa fa-search"></i></button>
                         </form>
+
+                    <!--final de barra busqueda-->
+
+
                     </div>
                     <!--search-bar end-->
                     <nav>

@@ -10,6 +10,14 @@ class mdlEdicion extends Singleton
 
         $id = $_COOKIE['logged']; //Inicializo una variable con el valor de id del usuario
 
+        if(!is_null(getPost('busqueda'))){
+
+            setcookie('busqueda',getPost('nombre'), 0);
+
+            redirectTo('index.php?pagina=busqueda');
+
+        }
+
         if (is_null(getPost('edicion'))) { //En este if se entra cuando el usuario no ha enviado el form por primera vez y es el donde se recuperan los datos
 
             $datos = usuarios::searchAllByIdDB($id); //rescato los datos del usuario para autocompletar el formulario
@@ -23,8 +31,8 @@ class mdlEdicion extends Singleton
                 $toValidate = $datos[0];
 
                 $rules = array( //se hace uso de las rules para la recuperacion de datos
-                    'nombre' => 'required|number_alpha',
-                    'apellidos' => 'required|number_alpha',
+                    'nombre' => 'required|alpha_space',
+                    'apellidos' => 'required|alpha_space',
                     'fecha_nac' => 'required',
                     'bio' => '',
                     'foto' => ''
@@ -44,8 +52,8 @@ class mdlEdicion extends Singleton
             $val = Validacion::getInstance();
             $toValidate = $_POST;
             $rules = array(
-                'nombre' => 'required|number_alpha',
-                'apellidos' => 'required|number_alpha',
+                'nombre' => 'required|alpha_space',
+                'apellidos' => 'required|alpha_space',
                 'fecha_nac' => 'required',
                 'bio' => '',
                 'foto' => ''
