@@ -5,6 +5,8 @@ var id;
 
 function peticionAJAXRelacionUser() {
 
+    cambiarBtn();
+
     xhr_ru = new XMLHttpRequest();
 
     if (xhr_ru) {
@@ -78,4 +80,19 @@ function creaJsonSeguir() {
     };
 
     return JSON.stringify(obj);
+}
+
+function cambiarBtn() {
+
+    if (document.getElementById('txtSeguir').innerHTML == "Seguir") {
+
+        document.getElementById('txtSeguir').innerHTML = "Dejar de seguir";
+        document.getElementById('simbSeguir').className = "fa fa-minus";
+        document.getElementById('btnSeguir').className = "bot1";
+    } else {
+
+        document.getElementById('txtSeguir').innerHTML = "Seguir";
+        document.getElementById('simbSeguir').className = "la la-plus";
+        document.getElementById('btnSeguir').className = "bot";
+    }
 }

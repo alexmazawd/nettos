@@ -22,7 +22,6 @@ function gestionarRespuestaNetts() {
 
     let JsonObj = JSON.parse(http_peti.responseText);
     let netts = JsonObj.listaNetts;
-    console.log(netts);
     for (let i = 0; i < 50; i++) {
 
         let fotoUser = "images/" + netts[i].foto;

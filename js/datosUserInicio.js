@@ -1,4 +1,5 @@
 var xhr;
+var xhr_seguir;
 
 function peticionAJAXdatosUser() {
 
@@ -30,6 +31,7 @@ function gestionarRespuestaDatosUser() {
         } else {
 
             document.getElementById('publicarNett').remove();
+            actualizaBtnSeguir();
         }
     }
 
@@ -57,8 +59,57 @@ function gestionarRespuestaDatosUser() {
     document.getElementById('nSiguiendo').innerHTML = siguiendo;
     document.getElementById('nSeguidores').innerHTML = seguidores;
     document.getElementById('nNetts').innerHTML = netts;
-    document.getElementById('imgSecundaria').src = imagen;
     document.getElementById('nMgs').innerHTML = favs;
+    document.getElementById('imgSecundaria').src = imagen;
+}
+
+function actualizaBtnSeguir() {
+
+    xhr_seguir = new XMLHttpRequest();
+
+    if (xhr_seguir) {
+
+        xhr_seguir.onload = gestionarRespuestaSeguirONo;
+
+        xhr_seguir.open("POST", "ajax/relacionUsers.php", true);
+
+        let json = "id_usuario=" + creaJsonSegONo();
+
+        xhr_seguir.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+        xhr_seguir.send(json);
+
+    }
+}
+
+function gestionarRespuestaSeguirONo() {
+
+    resp = JSON.parse(xhr_seguir.responseText);
+    let relacion = resp.sigue;
+
+    if (relacion > 0) {
+
+        document.getElementById('txtSeguir').innerHTML = "Dejar de seguir";
+        document.getElementById('simbSeguir').className = "fa fa-minus";
+        document.getElementById('btnSeguir').className = "bot1";
+    } else {
+
+        document.getElementById('txtSeguir').innerHTML = "Seguir";
+        document.getElementById('simbSeguir').className = "la la-plus";
+        document.getElementById('btnSeguir').className = "bot";
+    }
+}
+
+function creaJsonSegONo() {
+
+    let url = window.location.href;
+    id = url.substr(-1);
+    let obj = {
+        id: id
+    };
+
+    return JSON.stringify(obj);
 }
 
 peticionAJAXdatosUser();
+actualizaBtnSeguir();
