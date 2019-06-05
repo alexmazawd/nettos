@@ -1184,6 +1184,23 @@ main {
 
 }
 
+.bot1{
+
+    background-color: #3f71c7;
+    color: #ffffff;
+    border-color: #3f71c7;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    border: 0;
+    cursor: pointer;
+
+
+
+
+}
+
 .post-st ul li a:hover,
 .post-st ul li a.active {
     background-color: #52C77E;

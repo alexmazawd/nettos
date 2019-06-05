@@ -28,7 +28,7 @@
             <entry file="file://$PROJECT_DIR$/mvc/vista/inicio.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="646">
-                  <caret line="126" column="40" lean-forward="true" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+                  <caret line="132" column="40" lean-forward="true" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -47,7 +47,7 @@
             <entry file="file://$PROJECT_DIR$/mvc/vista/perfil.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="252">
-                  <caret line="114" column="70" selection-start-line="114" selection-start-column="70" selection-end-line="114" selection-end-column="70" />
+                  <caret line="120" column="70" selection-start-line="120" selection-start-column="70" selection-end-line="120" selection-end-column="70" />
                 </state>
               </provider>
             </entry>
@@ -389,12 +389,12 @@
       <workItem from="1559481037333" duration="3849000" />
       <workItem from="1559486045771" duration="52000" />
       <workItem from="1559500103080" duration="59000" />
-      <workItem from="1559588020454" duration="4274000" />
+      <workItem from="1559588020454" duration="4503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47532000" />
+    <option name="totallyTimeSpent" value="47761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -633,7 +633,7 @@
     <entry file="file://$PROJECT_DIR$/mvc/vista/perfil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="114" column="70" selection-start-line="114" selection-start-column="70" selection-end-line="114" selection-end-column="70" />
+          <caret line="120" column="70" selection-start-line="120" selection-start-column="70" selection-end-line="120" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -647,7 +647,7 @@
     <entry file="file://$PROJECT_DIR$/mvc/vista/inicio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="126" column="40" lean-forward="true" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+          <caret line="132" column="40" lean-forward="true" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
         </state>
       </provider>
     </entry>
