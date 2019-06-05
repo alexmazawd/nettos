@@ -9,7 +9,7 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 
     }
 
-    $users = usuarios::searchNombreDB('Veni');
+    $users = usuarios::searchNombreDB($nombre);
 
 //Utilizamos stdClass, clase vacía sin métodos ni propiedades que nos permite construir objetos genéricos
 

@@ -44,6 +44,7 @@ function gestionarRespuestaDatosUser() {
     let netts = datos.netts;
     let siguiendo = datos.siguiendo;
     let usuario = "@" + datos.usuario[0].usuario;
+    let url = window.location.href;
 
     document.getElementById('nUsuario').innerHTML = nombre + " " + apellidos;
     if (descripcion) {
@@ -59,7 +60,9 @@ function gestionarRespuestaDatosUser() {
     document.getElementById('nSiguiendo').innerHTML = siguiendo;
     document.getElementById('nSeguidores').innerHTML = seguidores;
     document.getElementById('nNetts').innerHTML = netts;
-    document.getElementById('nMgs').innerHTML = favs;
+    if (url.includes('perfil')) {
+        document.getElementById('nMgs').innerHTML = favs;
+    }
     document.getElementById('imgSecundaria').src = imagen;
 }
 

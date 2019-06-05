@@ -101,28 +101,8 @@
                             <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
                                     <div class="acc-setting">
                                         <h3>Busqueda</h3>
-                                        <div class="notifications-list">
-                                            <div class="notfication-details">
-                                                <div class="noty-user-img">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                </div>
-                                                <div class="notification-info">
-                                                        <h3><a href="#" title="">NOMBRE DE USUARIO.</a></h3>
-                                                    <span>NOMBRE Y APELLIDOS</span>
-
-                                                    </div><!--notification-info -->
-                                            </div><!--notfication-details end-->
-
-                                            <div class="notfication-details">
-                                                <div class="noty-user-img">
-                                                    <img src="images/perfil.jpg" alt="">
-                                                </div>
-                                                <div class="notification-info">
-                                                    <h3><a href="#" title="">@nachoRL.</a></h3>
-                                                    <span>Nacho Rodriguez</span>
-
-                                                </div><!--notification-info -->
-                                            </div><!--notfication-details end-->
+                                        <div class="notifications-list" id="usersContainer">
+                                            
                                         </div><!--notifications-list end-->
                                     </div><!--acc-setting end-->
                                 </div>

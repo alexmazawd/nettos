@@ -65,12 +65,13 @@ class usuarios
 
         $datos = $database->select('usuarios',
 
-            ['id_usuario','nombre','apellidos','foto'],
+            ['id_usuario','nombre','apellidos','foto',"usuario"],
 
             ["OR" =>[
 
                 "nombre[~]" => $nombre,
-                "apellidos[~]" => $nombre
+                "apellidos[~]" => $nombre,
+                "usuario[~]" => $nombre
     ]
             ]);
 
