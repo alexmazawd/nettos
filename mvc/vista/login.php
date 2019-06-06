@@ -64,6 +64,14 @@
 						</span>
                 </div>
 
+
+
+                <input type="checkbox" id="log" name="log"
+
+                       value='<?php echo $val->restoreCheckboxes('log',true); ?>'>
+
+                <label for="log">Mantener sesion iniciada</label>
+
                 <div class="container-login100-form-btn">
                     <button type="submit" id="enviarForm" name="login" class="login100-form-btn">
                         Login
