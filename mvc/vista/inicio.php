@@ -81,11 +81,13 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="menu-btn espaciado">
-                        <a href="#" title=""><i class="fa fa-bars"></i></a>
-                    </div><!--menu-btn end-->
+
 
                 </div>
+
+                <div class="menu-btn espaciado">
+                    <a href="#" title=""><i class="fa fa-bars"></i></a>
+                </div><!--menu-btn end-->
             </div>
         </header>
         <!--FIN DEL HEADER-->
