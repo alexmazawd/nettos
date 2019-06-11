@@ -5993,7 +5993,9 @@ a:hover {
     font-size: 18px;
     font-weight: 600;
     border-bottom: 1px solid #e5e5e5;
-    padding: 25px 20px;
+    padding: 25px 0 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .widget-user ul {
@@ -6286,6 +6288,20 @@ a:hover {
     border: 1px solid #52C77E;
     padding: 60px 50px;
     text-align: justify;
+
+}
+
+.mweb {
+
+    padding: 60px 50px;
+    text-align: center;
+
+
+}
+
+.licencias h2{
+
+    text-align: center;
 
 }
 
