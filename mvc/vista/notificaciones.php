@@ -50,7 +50,7 @@
                     <!--final de barra busqueda-->
 
                 </div>
-                <!--search-bar end-->
+
                 <nav>
                     <ul>
                         <li>
@@ -78,58 +78,53 @@
                         </li>
                     </ul>
                 </nav>
-                <!--nav end-->
+                <!--nav vista movil-->
                 <div class="menu-btn espaciado">
                     <a href="#" title=""><i class="fa fa-bars"></i></a>
                 </div>
-                <!--menu-btn end-->
+
             </div>
-            <!--header-data end-->
+
         </div>
     </header>
-    <!--header end-->
+    <!--header fin-->
 
 
     <section class="profile-account-setting">
         <div class="container">
                 <div class="row">
 
+                    <div class="col-lg-12">
 
-
-
-
-                    <div class="col-lg-6">
-
-                            <!--EDITAR PERFIL-->
+                            <!--Notificaciones-->
 
                             <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
                                     <div class="acc-setting">
                                         <h3>Nuevos seguidores</h3>
                                         <div class="notifications-list" id="cuadroSeguidores">
 
-                                        </div><!--notifications-list end-->
-                                    </div><!--acc-setting end-->
+                                        </div>
+                                    </div>
                                 </div>
 
                     </div>
 
 
-                        <div class="col-lg-6">
+                    <!--Futura implementación Favoritos-->
 
-                            <!--EDITAR PERFIL-->
+                        <!--<div class="col-lg-6">
 
                             <div class="espaciado_Setting" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
                                 <div class="acc-setting">
                                     <h3>Nuevos Favs</h3>
                                     <div class="notifications-list" id="cuadroFavs">
-                                        
-                                    </div><!--notifications-list end-->
-                                </div><!--acc-setting end-->
+
+                                    </div>
+                                </div>
                             </div>
 
 
-
-                        </div>
+                        </div>-->
 
 
 

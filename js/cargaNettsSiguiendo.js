@@ -44,9 +44,7 @@ function gestionarRespuestaNettsSiguiendo() {
             cuadro += "<img class='fotoNett' src='images/" + imagen + "' class='' alt='Imagen'>";
         }
 
-        cuadro += '<div class="job-status-bar" id="txtFav"><ul class="like-com" id="icoFav"><li>' +
-            '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + favs +
-            '</span></li></ul></div></div>';
+        cuadro += '<div class="job-status-bar"></div>';
 
         document.getElementById('seccionNetts').innerHTML += cuadro;
     }
