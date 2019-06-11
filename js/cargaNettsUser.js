@@ -22,30 +22,38 @@ function gestionarRespuestaNetts() {
 
     let JsonObj = JSON.parse(http_peti.responseText);
     let netts = JsonObj.listaNetts;
-    for (let i = 0; i < 50; i++) {
+    if (!netts.length > 0) {
 
-        let fotoUser = "images/" + netts[i].foto;
-        let imagen = netts[i].imagen;
-        let nombre = netts[i].nombre + " " + netts[i].apellidos;
-        let contenido = netts[i].contenido;
-        let likes = netts[i].likes;
-        let user = netts[i].usuario;
-        let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
-                     fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
-                     '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+ user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
-                     '</div>';
+        let cuadro = '<div class="post-bar"><div class="post_topbar">No se ha encontrado ningún nett todavía. Empieza a nettear!</div></div>';
+        document.getElementById('seccionNetts').innerHTML = cuadro;
+    } else {
 
-        if (imagen) {
+        for (let i = 0; i < 50; i++) {
 
-            cuadro += "<img class='fotoNett' src='images/" + imagen + "' class='' alt='Imagen'>";
+            let fotoUser = "images/" + netts[i].foto;
+            let imagen = netts[i].imagen;
+            let nombre = netts[i].nombre + " " + netts[i].apellidos;
+            let contenido = netts[i].contenido;
+            let likes = netts[i].likes;
+            let user = netts[i].usuario;
+            let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
+                         fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
+                         '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+ user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
+                         '</div>';
+
+            if (imagen) {
+
+                cuadro += "<img class='fotoNett' src='images/" + imagen + "' class='' alt='Imagen'>";
+            }
+
+            cuadro += '<div class="job-status-bar"><ul class="like-com"><li>' +
+            '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + likes +
+            '</span></li></ul></div></div>';
+
+            document.getElementById('seccionNetts').innerHTML += cuadro;
         }
-
-        cuadro += '<div class="job-status-bar"><ul class="like-com"><li>' +
-        '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + likes +
-        '</span></li></ul></div></div>';
-
-        document.getElementById('seccionNetts').innerHTML += cuadro;
     }
+
 }
 
 peticionAJAXNettsuser();

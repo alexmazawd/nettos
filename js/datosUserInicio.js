@@ -39,10 +39,10 @@ function gestionarRespuestaDatosUser() {
     let apellidos = datos.usuario[0].apellidos;
     let descripcion = datos.usuario[0].bio;
     let imagen = "images/" + datos.usuario[0].foto;
-    let seguidores = datos.seguidores;
+    let seguidores = datos.seguidores - 1;
     let favs = datos.favs;
     let netts = datos.netts;
-    let siguiendo = datos.siguiendo;
+    let siguiendo = datos.siguiendo - 1;
     let usuario = "@" + datos.usuario[0].usuario;
     let url = window.location.href;
 

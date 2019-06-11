@@ -23,6 +23,7 @@ function gestionarRespuesta() {
     let notificaciones = JSON.parse(peti_xhr.responseText);
     console.log(notificaciones);
     let notiSeg = notificaciones.notifSeguidores;
+    notiSeg.pop();
     let notiFav = notificaciones.notiFavs;
 
     if (notiSeg.length > 0) {
