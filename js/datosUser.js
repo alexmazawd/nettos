@@ -22,7 +22,6 @@ function peticionAJAXdatosUser() {
 function gestionarRespuestaDatosUser() {
 
     let datos = JSON.parse(xhr.responseText);
-    console.log(datos);
     if (document.getElementById('contBtnSeguir')) {
 
         if (datos.usuarioOnline) {
@@ -111,4 +110,7 @@ function creaJsonSegONo() {
 }
 
 peticionAJAXdatosUser();
-actualizaBtnSeguir();
+if (window.location.href.includes('perfil')) {
+
+    actualizaBtnSeguir();
+}

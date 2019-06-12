@@ -38,15 +38,14 @@ function gestionarRespuestaNetts() {
             let fecha = netts[i].fecha_pub;
             let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
                          fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
-                         '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+ user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
-                         '</div>';
+                         '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+ user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>';
 
             if (imagen) {
 
                 cuadro += "<img class='fotoNett' src='images/" + imagen + "' class='' alt='Imagen'>";
             }
 
-            cuadro += '<div class="job-status-bar"><span>' + fecha + '</span></div></div>';
+            cuadro += '</div><div class="job-status-bar"><span>' + fecha + '</span></div></div>';
 
             document.getElementById('seccionNetts').innerHTML += cuadro;
         }

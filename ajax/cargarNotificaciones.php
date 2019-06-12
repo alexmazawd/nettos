@@ -52,13 +52,9 @@ fecha_fav: "2019-05-23 21:03:01"
 
 $seguidos='';
 
-$favs = '';
-
 if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado sesion asi que el usuario es enviado al index
 
     $id = $_COOKIE['logged'];
-
-    $favs = favs::cargarFavs($id);// para probar eliminar el if y colocar id de un usuario que haya hecho netts
 
     $seguidos= seguidores::searchNotifSeguido($id);
 
@@ -75,8 +71,6 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 $objeto_json = new stdClass();
 
 $objeto_json->notifSeguidores=$seguidos; //dos arrays json que diferencian las notificaciones por like/fav y las de cuando alguien te sigue
-
-$objeto_json->notiFavs=$favs;
 
 
 echo json_encode($objeto_json);

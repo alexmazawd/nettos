@@ -30,8 +30,6 @@
     <script defer src="js/datosUser.js"></script>
     <!-- Se añade js para sacar datos del usuario -->
     <script defer src="js/cargaNettsSiguiendo.js"></script>
-    <!-- Se añade js para dar o quitar fav -->
-    <script async src="js/darQuitarFav.js"></script>
 
     <!--INICIO DEL HEADER-->
     <header>
