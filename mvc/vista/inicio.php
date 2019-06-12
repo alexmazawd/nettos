@@ -122,7 +122,7 @@
                                             <span id="nNetts">1</span>
                                         </li>
                                         <li>
-                                            <h4>SEGUIENDO</h4>
+                                            <h4>SIGUIENDO</h4>
                                             <span id="nSiguiendo">1</span>
                                         </li>
                                         <li>
