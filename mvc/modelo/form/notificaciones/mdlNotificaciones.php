@@ -15,6 +15,14 @@ class mdlNotificaciones extends Singleton
             redirectTo('index.php?pagina=login');
         }
 
+        if(!is_null(getPost('busqueda'))){
+
+            setcookie('busqueda',getPost('nombre'), 0);
+
+            redirectTo('index.php?pagina=busqueda');
+
+        }
+
     }
 
     public function onCargarVista($path)
