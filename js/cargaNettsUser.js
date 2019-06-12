@@ -34,8 +34,8 @@ function gestionarRespuestaNetts() {
             let imagen = netts[i].imagen;
             let nombre = netts[i].nombre + " " + netts[i].apellidos;
             let contenido = netts[i].contenido;
-            let likes = netts[i].likes;
             let user = netts[i].usuario;
+            let fecha = netts[i].fecha_pub;
             let cuadro = '<div class="post-bar"><div class="post_topbar"><div class="usy-dt"><img src="' +
                          fotoUser + '" alt="Imagen del usuario"><div class="usy-name"><h3>' + nombre +
                          '</div><br><span class="userNaNett">&nbsp&nbsp&nbsp&nbsp@'+ user +'</span></div></div><div class="job_descp"><p>' + contenido + '</p>' +
@@ -46,9 +46,7 @@ function gestionarRespuestaNetts() {
                 cuadro += "<img class='fotoNett' src='images/" + imagen + "' class='' alt='Imagen'>";
             }
 
-            cuadro += '<div class="job-status-bar"><ul class="like-com"><li>' +
-            '<a href="#"><i class="la la-heart"></i>Me gusta</a><span>' + likes +
-            '</span></li></ul></div></div>';
+            cuadro += '<div class="job-status-bar"><span>' + fecha + '</span></div></div>';
 
             document.getElementById('seccionNetts').innerHTML += cuadro;
         }

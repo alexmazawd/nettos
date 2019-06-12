@@ -27,7 +27,7 @@
     <!-- Se añade js para crear el nett -->
     <script async src="js/insertaNett.js"></script>
     <!-- Se añade js para sacar datos del usuario -->
-    <script defer src="js/datosUserInicio.js"></script>
+    <script defer src="js/datosUser.js"></script>
     <!-- Se añade js para sacar datos del usuario -->
     <script defer src="js/cargaNettsSiguiendo.js"></script>
     <!-- Se añade js para dar o quitar fav -->

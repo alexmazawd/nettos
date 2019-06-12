@@ -14,9 +14,9 @@ class netts{
         $database->openConnection(MYSQL_CONFIG);
         $datos = $database->select("netts",
 
-            ["[><]usuarios"=>["netts.id_usuario"=>"id_usuario"],"[>]favs"=>["netts.id_nett"=>"id_nett"]],
+            ["[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
 
-            ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.usuario","usuarios.nombre","usuarios.apellidos","likes"=>Medoo::raw('count(favs.id_nett)')],
+            ["netts.id_nett","usuarios.foto","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.usuario","usuarios.nombre","usuarios.apellidos"],
 
             ["netts.id_usuario[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"], "GROUP" => "netts.id_nett"]);
 
@@ -61,9 +61,9 @@ class netts{
 
         $datos = $database->select("netts",
 
-            ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"],"[><]usuarios"=>["netts.id_usuario"=>"id_usuario"],"[>]favs"=>["netts.id_nett"=>"id_nett"]],
+            ["[><]seguidores"=>["netts.id_usuario"=>"id_usuario_seguido"],"[><]usuarios"=>["netts.id_usuario"=>"id_usuario"]],
 
-            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.usuario","usuarios.nombre","usuarios.apellidos","likes"=>Medoo::raw('count(favs.id_nett)')],
+            ["netts.id_nett","netts.id_usuario","netts.contenido","netts.imagen","netts.fecha_pub","usuarios.foto","usuarios.usuario","usuarios.nombre","usuarios.apellidos"],
 
             ["seguidores.id_usuario_seguidor[=]" => $id,"ORDER" => ["netts.fecha_pub" => "DESC"], "GROUP" => "netts.id_nett"]
 
