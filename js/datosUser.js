@@ -1,10 +1,17 @@
+/*
+    JS encargado de cargar los datos del usuario
+ */
+
+// Creo 2 variables ya que tengo que hacer 2 peticiones AJAX
 var xhr;
 var xhr_seguir;
 
+// Funcion que realiza la peticion AJAX de los datos del usuario
 function peticionAJAXdatosUser() {
 
     xhr = new XMLHttpRequest();
 
+    // Si se ha inicializado correctamente la variable realizo la peticion
     if (xhr) {
 
         xhr.onload = gestionarRespuestaDatosUser;
@@ -13,20 +20,26 @@ function peticionAJAXdatosUser() {
 
         xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 
-        xhr.send(null);
+        xhr.send(null); // Se envia a null ya que solo tengo que tratar la respuesta del servidor
 
     }
 
 }
 
+// Funcion encargada de gestionar la respuesta del servidor de los datos del usuario
 function gestionarRespuestaDatosUser() {
 
-    let datos = JSON.parse(xhr.responseText);
+    let datos = JSON.parse(xhr.responseText); // Respuesta del servidor
+    // Hago esta comprobacion porque hay casos en los que el boton no está y da error
     if (document.getElementById('contBtnSeguir')) {
 
+        /* Si la variable es true es porque es el propio
+        perfil del usuario por lo que se elimina el boton de seguir */
         if (datos.usuarioOnline) {
 
             document.getElementById('contBtnSeguir').remove();
+        /* En caso contrario se elimina el publicar nett ya que es el perfil
+        de otro usuario y se actualiza el boton de seguir en caso de que le siga ya o no */
         } else {
 
             document.getElementById('publicarNett').remove();
@@ -34,6 +47,7 @@ function gestionarRespuestaDatosUser() {
         }
     }
 
+    // Inicializo todas las variables de los datos del usuario
     let nombre = datos.usuario[0].nombre;
     let apellidos = datos.usuario[0].apellidos;
     let descripcion = datos.usuario[0].bio;
@@ -45,6 +59,7 @@ function gestionarRespuestaDatosUser() {
     let url = window.location.href;
 
     document.getElementById('nUsuario').innerHTML = nombre + " " + apellidos;
+    // Si el usuario tiene descripcion aparece su descripcion, si no aparece una por defecto
     if (descripcion) {
 
         document.getElementById('descripcion').innerHTML = descripcion;
@@ -61,10 +76,12 @@ function gestionarRespuestaDatosUser() {
     document.getElementById('imgSecundaria').src = imagen;
 }
 
+/* Funcion encargada de mostrar el boton de seguir de una manera u otra
+dependiendo de si el usuario loegueado sigue al otro usuario o no */
 function actualizaBtnSeguir() {
 
     xhr_seguir = new XMLHttpRequest();
-
+    // Si se ha inicializado correctamente la variable realizo la peticion
     if (xhr_seguir) {
 
         xhr_seguir.onload = gestionarRespuestaSeguirONo;
@@ -75,16 +92,18 @@ function actualizaBtnSeguir() {
 
         xhr_seguir.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 
-        xhr_seguir.send(json);
+        xhr_seguir.send(json); // Se envia un JSON con el id del usuario que esta visitando
 
     }
 }
 
+// Funcion encargada de cambiar el texto y el estilo del boton de seguir
 function gestionarRespuestaSeguirONo() {
 
     resp = JSON.parse(xhr_seguir.responseText);
     let relacion = resp.sigue;
 
+    // Si la relacion es 1 es que le sigue, si no es que no
     if (relacion > 0) {
 
         document.getElementById('txtSeguir').innerHTML = "Dejar de seguir";
@@ -98,9 +117,10 @@ function gestionarRespuestaSeguirONo() {
     }
 }
 
+// Funcion encargada de crear el JSON que se enviara al servidor
 function creaJsonSegONo() {
 
-    let url = window.location.href;
+    let url = window.location.href; // Coge el ID del usuario de la URL
     id = url.substr(-1);
     let obj = {
         id: id
@@ -109,7 +129,9 @@ function creaJsonSegONo() {
     return JSON.stringify(obj);
 }
 
+// Llamada a las funciones
 peticionAJAXdatosUser();
+// Si el usuario está en la vista de perfil llamará a la funcion para actualizar el boton
 if (window.location.href.includes('perfil')) {
 
     actualizaBtnSeguir();
