@@ -81,11 +81,42 @@
                             <div class="acc-setting">
                                 <h3>Sobre Nosotros</h3>
                                 <div class="licencias">
-                                    <br>
-                                    ¿Quienes somos?
-                                    <br><br>
 
-                                    SOMOS UNA EMPRESA DEDICADA A
+                                    Fundada en 2019.
+
+                                    <br>
+                                    ¿Nuestra mision?
+
+                                    Crear una red social que provea a sus usuarios de un espacio seguro donde
+                                    puedan comentar e intercambiar opiniones con total seguridad
+                                    y sin ningun tipo de compromiso a respuestas o prejuicios.
+                                    Buscamos crear una gigantesca red social que cada usuario pueda usar como red de contactos ampliable
+                                    desde el respeto y donde incluso se puedan encontrar o formar amistades.
+
+                                    <br><br>
+                                    ¿Nuestro vision?
+
+                                    La libertad de crear y mantener tu propio espacio. Lo que escribes solo eliges quien lo ve
+                                    aquello que compartes solo lo compartiras con quien tu quieras y aquello que quieras leer o consumir
+                                    solo tu lo elegiras y lo decidiras.
+
+                                    <br><br>
+                                    ¿Quienes somos?
+
+                                    Alejandro Lopez: Programador y fundador. Nuestro encargado del backend
+                                    y responsable de todo el trabajo interno en nuestra web, encargado de la seguridad de los datos
+                                    y la transmision de estos.
+                                    Graduado como tecnico superior en desarrollo web en I.E.S. Ciudad Escolar.
+
+                                    Ignacio Rodriguez: Programador y fundador. Nuestro encargado de diseño e interfaz.
+                                    Experto en HTML/CSS y usabilidad. Responsable de la imagen de nuestra web. Encargado de la publicidad y soporte web.
+                                    Graduado como tecnico superior en desarrollo web en I.E.S. Ciudad Escolar, ademas de poseer titulo como tecnico medio en sistemas informaticos.
+
+
+                                    Alejandro Maza: Programador y fundador. Nuestro encargado de frontend.
+                                    Con conocimientos en JavaScript y SQL. Responsable del manejo de datos de la web en la interfaz y diseño de la base de datos.
+                                    Graduado como tecnico superior en desarrollo web en I.E.S. Ciudad Escolar. Tecnico medio en sistemas informaticos.
+
 
                                     <br><br>
                                 </div>
