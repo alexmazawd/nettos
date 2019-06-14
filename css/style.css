@@ -1500,6 +1500,8 @@ main {
     float: left;
     width: 100%;
     padding: 15px 20px;
+    color: #6c757d;
+    font-size: 12px;
 }
 
 .like-com {
@@ -6315,7 +6317,7 @@ a:hover {
 
     margin-left: 30%;
     margin-top: 20px;
-    border-radius: 15px;
+    border-radius: 8px;
     width: 220px;
     height: 220px;
     object-fit: cover;

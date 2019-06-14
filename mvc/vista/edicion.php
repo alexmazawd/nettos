@@ -191,11 +191,11 @@
         <div class="footy-sec mn no-margin">
             <div class="container">
                 <ul>
-                        <li><a href="#" onclick="window.open('mvc/vista/politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Sobre Nosotros">Sobre Nosotros</a></li>
-                        <li><a href="#" onclick="window.open('mvc/vista/politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Política de datos">Política de datos</a></li>
-                        <li><a href="#" onclick="window.open('mvc/vista/politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Política de cookies">Política de cookies</a></li>
-                        <li><a href="#" onclick="window.open('mvc/vista/politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Copyright">Copyright</a></li>
-                        <li><a href="#" onclick="window.open('mvc/vista/politicas.php', 'Terminos y Licencia','width=1200,height=750')" title="Mapa Web">Mapa Web</a></li>
+                    <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Sobre Nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Política de datos">Política de datos</a></li>
+                    <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Política de cookies">Política de cookies</a></li>
+                    <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Copyright">Copyright</a></li>
+                    <li><a href="#" onclick="window.open('?pagina=politicas', 'Terminos y Licencia','width=1200,height=750')" title="Mapa Web">Mapa Web</a></li>
                 </ul>
                 <p><img class="reduccionPerfil" src="images/logo_principal.png" alt="Logo de la empresa">Nettos © 2019</p>
 

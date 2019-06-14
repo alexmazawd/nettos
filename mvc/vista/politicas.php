@@ -62,7 +62,7 @@
                                aria-selected="false"><i class="fa fa-lock"></i>Política de cookies</a>
                             <a class="nav-item nav-link" id="nav-mapa-web-tab" data-toggle="tab"
                                href="#nav-mapa-web" role="tab" aria-controls="nav-mapa-web"
-                               aria-selected="false"><i class="fa fa-lock"></i>Mapa Web</a>
+                               aria-selected="false"><i class="fa fa-map"></i>Mapa Web</a>
 
 
                         </div>
