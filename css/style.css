@@ -6358,3 +6358,13 @@ a:hover {
     display: none;
 
 }
+
+.mapw{
+
+    color: #000000;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 2px;
+}
