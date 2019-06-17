@@ -224,16 +224,16 @@
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-lg-12">
-                            <textarea required="required" name="nett" id="nett" placeholder="Cuentanos que estas pensando!"></textarea>
+                            <textarea oninput="validarNett()" name="nett" id="nett" placeholder="Cuentanos que estas pensando!"></textarea>
                         </div>
                         <div class="col-lg-6">
-                            <input type="file" id="imgNett" name="imgNett" placeholder="Introduce una imagen"
+                            <input type="file" id="imgNett" oninput="validarNett()" name="imgNett" placeholder="Introduce una imagen"
                                    title="Subir archivos">
                         </div>
                         <div class="col-lg-12">
                             <ul>
                                 <li>
-                                    <button class="active" type="submit" value="post" onclick="peticionAJAX()">Publicar
+                                    <button class="active" type="submit" value="post" id="envio1Nett" onclick="peticionAJAX()" disabled="disabled">Publicar
                                         Nett
                                     </button>
                                 </li>
@@ -261,6 +261,7 @@
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript" src="js/scrollbar.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/validarNett.js"></script>
 
 </body>
 </html>

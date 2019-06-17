@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input">
-                    <input class="input100" required="required" type="password" id="clave" name="clave" placeholder="Contraseña" value='<?php echo $val->restoreValue('clave'); ?>'>
+                    <input class="input100" required="required" type="password" id="clave" name="clave" placeholder="Contraseña"  value='<?php echo $val->restoreValue('clave'); ?>'>
                     <span>{{war-clave}}</span>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
