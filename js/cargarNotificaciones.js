@@ -28,7 +28,6 @@ function gestionarRespuesta() {
 
     let notificaciones = JSON.parse(peti_xhr.responseText); // Respuesta del servidor
     let notiSeg = notificaciones.notifSeguidores; // Lista de notificaciones
-    notiSeg.pop();
 
     // Si la lista de notificaciones no esta vacia, llama a la funcion que cra el cuadro
     if (!notiSeg.length > 0) {
