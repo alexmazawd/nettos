@@ -43,7 +43,7 @@
                     <!--inicio barra busqueda-->
 
                     <form action="index.php?pagina=notificaciones" method="post">
-                        <input type="text" id="nombre" name="nombre" placeholder="Buscar...">
+                        <input type="text" required="required" id="nombre" name="nombre" placeholder="Buscar...">
                         <button type="submit" id="busqueda" name="busqueda"><i class="fa fa-search"></i></button>
                     </form>
 

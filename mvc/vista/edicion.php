@@ -48,7 +48,7 @@
                     <!--inicio barra busqueda-->
 
                     <form action="index.phpindex.php?pagina=edicion" method="post">
-                        <input type="text" id="nombre" name="nombre" placeholder="Buscar...">
+                        <input type="text" required="required" id="nombre" name="nombre" placeholder="Buscar...">
                         <button type="submit" id="busqueda" name="busqueda"><i class="fa fa-search"></i></button>
                     </form>
 
@@ -118,6 +118,10 @@
                                                        name="nombre"
                                                        id="nombre"
                                                        placeholder="Nombre"
+                                                       required="required"
+                                                       pattern="^[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ]\s?[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ\s]+$"
+                                                       oninvalid="this.setCustomValidity('El formato es erroneo, introduzca el nombre. Ej: Luis Mariano ó Mariano');"
+                                                       oninput="this.setCustomValidity('')"
                                                        value='<?php echo $val->restoreValue('nombre'); ?>'>
                                                 <span>{{war-nombre}}</span>
                                                 <i class="fas fa-signature"></i>
@@ -129,6 +133,10 @@
                                                 <input type="text"
                                                        name="apellidos"
                                                        placeholder="Apellidos"
+                                                       required="required"
+                                                       pattern="^[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ]\s?[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ\s]+$"
+                                                       oninvalid="this.setCustomValidity('El formato es erroneo, introduzca los apellidos. Ej: López García');"
+                                                       oninput="this.setCustomValidity('')"
                                                        value='<?php echo $val->restoreValue('apellidos'); ?>' >
                                                 <span>{{war-apellidos}}</span>
                                                 <i class="fas fa-signature"></i>
@@ -140,6 +148,7 @@
                                                 <input type="date"
                                                        name="fecha_nac"
                                                        placeholder="fecha de nacimiento"
+                                                       required="required"
                                                        value='<?php echo $val->restoreValue('fecha_nac'); ?>'>
                                                 <span>{{war-fecha_nac}}</span>
                                                 <i class="fa fa-birthday-cake"></i>
@@ -167,7 +176,7 @@
 
                                         <div class="save-stngs pd3">
                                             <ul>
-                                                <li><button type="submit" name="edicion" onclick="location.href='mvc/vista/inicio.php';">Modificar</button></li>
+                                                <li><button type="submit" name="edicion">Modificar</button></li>
                                             </ul>
                                         </div><!--save-stngs end-->
                                     </form>

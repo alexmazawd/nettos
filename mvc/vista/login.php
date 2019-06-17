@@ -47,7 +47,16 @@
                 <br><br>
 
                 <div class="wrap-input100 validate-input">
-                    <input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario" value='<?php echo $val->restoreValue('usuario'); ?>'>
+                    <input class="input100"
+                           type="text"
+                           id="usuario"
+                           name="usuario"
+                           placeholder="Usuario"
+                           required="required"
+                           pattern="^[a-z0-9][0-9a-z]+$"
+                           oninvalid="this.setCustomValidity('El formato es erroneo, introduzca el nombre de usuario sin espacios');"
+                           oninput="this.setCustomValidity('')"
+                           value='<?php echo $val->restoreValue('usuario'); ?>'>
                     <span id="usuarioSpan">{{war-usuario}}</span>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
@@ -56,7 +65,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input">
-                    <input class="input100" type="password" id="clave" name="clave" placeholder="Contraseña" value='<?php echo $val->restoreValue('clave'); ?>'>
+                    <input class="input100" required="required" type="password" id="clave" name="clave" placeholder="Contraseña" value='<?php echo $val->restoreValue('clave'); ?>'>
                     <span>{{war-clave}}</span>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">

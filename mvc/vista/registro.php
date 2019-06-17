@@ -65,6 +65,7 @@
                            id="clave"
                            name="clave"
                            required="required"
+                           minlength="7"
                            placeholder="Clave" value='<?php echo $val->restoreValue('clave'); ?>'>
                     <span class="focus-input100"></span>
                     <span>{{war-clave}}</span>
@@ -74,6 +75,7 @@
                            type="password"
                            id="clave2"
                            name="clave2"
+                           minlength="7"
                            required="required"
                            placeholder="Confirmar Clave" value='<?php echo $val->restoreValue('clave2'); ?>'>
                     <span class="focus-input100"></span>
@@ -86,6 +88,9 @@
                            id="nombre"
                            name="nombre"
                            required="required"
+                           pattern="^[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ]\s?[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ\s]+$"
+                           oninvalid="this.setCustomValidity('El formato es erroneo, introduzca el nombre. Ej: Luis Mariano ó Mariano');"
+                           oninput="this.setCustomValidity('')"
                            placeholder="Nombre" value='<?php echo $val->restoreValue('nombre'); ?>'>
                     <span class="focus-input100"></span>
                     <span>{{war-nombre}}</span>
@@ -97,6 +102,9 @@
                            id="apellidos"
                            name="apellidos"
                            required="required"
+                           pattern="^[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ]\s?[a-zA-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ\s]+$"
+                           oninvalid="this.setCustomValidity('El formato es erroneo, introduzca los apellidos. Ej: López García');"
+                           oninput="this.setCustomValidity('')"
                            placeholder="Apellidos" value='<?php echo $val->restoreValue('apellidos'); ?>'>
                     <span class="focus-input100"></span>
                     <span>{{war-apellidos}}</span>

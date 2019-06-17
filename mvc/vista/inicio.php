@@ -44,7 +44,7 @@
 
                     <!--inicio barra busqueda-->
                     <form action="index.php?pagina=inicio" method="post">
-                        <input type="text" id="nombre" name="nombre" placeholder="Buscar...">
+                        <input type="text" required="required" id="nombre" name="nombre" placeholder="Buscar...">
                         <button type="submit" id="busqueda" name="busqueda"><i class="fa fa-search"></i></button>
                     </form>
 
@@ -224,7 +224,7 @@
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-lg-12">
-                            <textarea name="nett" id="nett" placeholder="Cuentanos que estas pensando!"></textarea>
+                            <textarea required="required" name="nett" id="nett" placeholder="Cuentanos que estas pensando!"></textarea>
                         </div>
                         <div class="col-lg-6">
                             <input type="file" id="imgNett" name="imgNett" placeholder="Introduce una imagen"
