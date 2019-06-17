@@ -10,38 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/validarNett.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mvc/vista/inicio.php">
+        <entry file="file://$PROJECT_DIR$/mvc/vista/politicas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="229" column="69" selection-start-line="229" selection-start-column="69" selection-end-line="229" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/vista/perfil.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="257" column="77" selection-start-line="257" selection-start-column="77" selection-end-line="257" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/vista/registro.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="214">
+              <caret line="153" column="78" selection-start-line="153" selection-start-column="78" selection-end-line="153" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -123,15 +96,15 @@
         <option value="$PROJECT_DIR$/js/cargaNettsUser.js" />
         <option value="$PROJECT_DIR$/js/cargaNettsSiguiendo.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/mvc/vista/politicas.php" />
         <option value="$PROJECT_DIR$/mvc/vista/notificaciones.php" />
         <option value="$PROJECT_DIR$/mvc/vista/edicion.php" />
         <option value="$PROJECT_DIR$/mvc/vista/registro.php" />
         <option value="$PROJECT_DIR$/mvc/vista/login.php" />
         <option value="$PROJECT_DIR$/js/validacion.js" />
         <option value="$PROJECT_DIR$/mvc/vista/perfil.php" />
-        <option value="$PROJECT_DIR$/js/validarNett.js" />
         <option value="$PROJECT_DIR$/mvc/vista/inicio.php" />
+        <option value="$PROJECT_DIR$/js/validarNett.js" />
+        <option value="$PROJECT_DIR$/mvc/vista/politicas.php" />
       </list>
     </option>
   </component>
@@ -168,47 +141,6 @@
               <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
               <item name="nettos" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettos" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettos" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="controlador" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettos" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="modelo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettos" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="modelo" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettos" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="modelo" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-              <item name="perfil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettos" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="modelo" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-              <item name="registro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
@@ -291,7 +223,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64923000" />
+    <option name="totallyTimeSpent" value="65433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
@@ -512,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/vista/politicas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/modelo/form/registro/mdlRegistro.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -593,24 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/vista/registro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/validacion.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="146" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/vista/perfil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="257" column="77" selection-start-line="257" selection-start-column="77" selection-end-line="257" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -624,7 +535,28 @@
     <entry file="file://$PROJECT_DIR$/mvc/vista/inicio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
-          <caret line="229" column="69" selection-start-line="229" selection-start-column="69" selection-end-line="229" selection-end-column="69" />
+          <caret line="229" column="58" selection-start-line="229" selection-start-column="51" selection-end-line="229" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/vista/perfil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="257" column="77" selection-start-line="257" selection-start-column="77" selection-end-line="257" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/vista/registro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/vista/politicas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="153" column="78" selection-start-line="153" selection-start-column="78" selection-end-line="153" selection-end-column="78" />
         </state>
       </provider>
     </entry>
