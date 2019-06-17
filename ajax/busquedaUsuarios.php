@@ -7,6 +7,8 @@ if (isset($_COOKIE['logged'])) { //Si esta cookie no existe no se ha iniciado se
 
     $nombre=$_COOKIE['busqueda'];
 
+    $nombre = explode(' ',$nombre);
+
     }
 
     $users = usuarios::searchNombreDB($nombre);
