@@ -10,11 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="841">
+              <caret line="6368" column="20" selection-start-line="6368" selection-start-column="20" selection-end-line="6368" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mvc/vista/politicas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="153" column="78" selection-start-line="153" selection-start-column="78" selection-end-line="153" selection-end-column="78" />
+            <state relative-caret-position="622">
+              <caret line="161" column="109" selection-start-line="161" selection-start-column="109" selection-end-line="161" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -95,7 +104,6 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/cargaNettsUser.js" />
         <option value="$PROJECT_DIR$/js/cargaNettsSiguiendo.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/mvc/vista/notificaciones.php" />
         <option value="$PROJECT_DIR$/mvc/vista/edicion.php" />
         <option value="$PROJECT_DIR$/mvc/vista/registro.php" />
@@ -104,14 +112,15 @@
         <option value="$PROJECT_DIR$/mvc/vista/perfil.php" />
         <option value="$PROJECT_DIR$/mvc/vista/inicio.php" />
         <option value="$PROJECT_DIR$/js/validarNett.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/mvc/vista/politicas.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-209" />
-    <option name="y" value="-21" />
-    <option name="width" value="1452" />
+    <option name="x" value="551" />
+    <option name="y" value="-14" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -130,6 +139,11 @@
             <path>
               <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
               <item name="nettos" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nettos" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -141,6 +155,12 @@
               <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
               <item name="nettos" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nettos" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="modelo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nettos" type="b2602c69:ProjectViewProjectNode" />
@@ -223,13 +243,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65433000" />
+    <option name="totallyTimeSpent" value="66448000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16295707" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -437,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="1503" column="17" selection-start-line="1503" selection-start-column="17" selection-end-line="1503" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/modelo/form/registro/mdlRegistro.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -553,10 +566,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="6368" column="20" selection-start-line="6368" selection-start-column="20" selection-end-line="6368" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/vista/politicas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="153" column="78" selection-start-line="153" selection-start-column="78" selection-end-line="153" selection-end-column="78" />
+        <state relative-caret-position="622">
+          <caret line="161" column="109" selection-start-line="161" selection-start-column="109" selection-end-line="161" selection-end-column="109" />
         </state>
       </provider>
     </entry>

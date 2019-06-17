@@ -151,16 +151,16 @@
 
 
                                                 <div class="col-lg-4">
-                                                    <p><a href="?pagina=inicio" target=»_blank»>Inicio</a></p>
+                                                    <p><span><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=inicio" target=»_blank»>Inicio</a></p>
                                                 </div>
                                                 <div class="col-lg-4">
 
-                                                    <p><a href="?pagina=notificaciones" target=»_blank»>Notificaciones</a></p>
+                                                    <p><span><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=notificaciones" target=»_blank»>Notificaciones</a></p>
 
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <p><a href="?pagina=perfil" target=»_blank»>Perfil</a></p>
-                                                    <p><a href="?pagina=edicion" target=»_blank»>Editar Perfil</a></p>
+                                                    <p><span><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=perfil" target=»_blank»>Perfil</a></p>
+                                                    <p><span><i class="fas fa-angle-right"></i></span><a class="mapw" href="?pagina=edicion" target=»_blank»>Editar Perfil</a></p>
                                                 </div>
 
 

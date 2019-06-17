@@ -53,7 +53,7 @@
                            name="usuario"
                            placeholder="Usuario"
                            required="required"
-                           pattern="^[a-z0-9][0-9a-z]+$"
+                           pattern="^[a-zA-Z0-9][0-9a-zA-Z]+$"
                            oninvalid="this.setCustomValidity('El formato es erroneo, introduzca el nombre de usuario sin espacios');"
                            oninput="this.setCustomValidity('')"
                            value='<?php echo $val->restoreValue('usuario'); ?>'>
