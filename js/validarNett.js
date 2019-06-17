@@ -2,14 +2,11 @@
 
 function validarNett() {
 
-    if (document.getElementById("nett").value.length != 0 && document.getElementById("imgNett").value != null){
+    document.getElementById("envio1Nett").disabled = false;
 
-        document.getElementById("envio1Nett").disabled = false;
-
-    }else {
+    if (document.getElementById("nett").value.length == 0 && document.getElementById("imgNett").value == "") {
 
         document.getElementById("envio1Nett").disabled = true;
-
     }
 
 }
