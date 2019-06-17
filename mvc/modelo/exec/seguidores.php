@@ -84,7 +84,7 @@ class seguidores
 
             ["usuarios.nombre","usuarios.apellidos","seguidores.fecha_seg","usuarios.foto","usuarios.id_usuario"],
 
-            ["seguidores.id_usuario_seguido[=]" => $id,"ORDER" => ["seguidores.fecha_seg" => "DESC"]]
+            ["AND"=>["seguidores.id_usuario_seguidor[!]" => $id,"seguidores.id_usuario_seguido[=]" => $id],"ORDER" => ["seguidores.fecha_seg" => "DESC"]]
         );
 
         $database->closeConnection();
