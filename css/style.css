@@ -414,6 +414,12 @@ header {
 
 }
 
+.reduccion2 {
+
+    width: 60px;
+
+}
+
 .reduccionfooter {
 
     width: 60px;
@@ -6231,6 +6237,11 @@ a:hover {
     float: right;
 }
 
+.espaciando{
+
+    margin-top: 20px;
+}
+
 
 /* ========== widget-feat ========= */
 
@@ -6288,6 +6299,13 @@ a:hover {
 
 .licencias {
     border: 1px solid #52C77E;
+    padding: 60px 50px;
+    text-align: justify;
+
+}
+
+.mwebajuntando {
+
     padding: 60px 50px;
     text-align: justify;
 
@@ -6362,9 +6380,11 @@ a:hover {
 .mapw{
 
     color: #000000;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: capitalize;
     font-weight: 600;
     margin-bottom: 6px;
     margin-top: 2px;
 }
+
+

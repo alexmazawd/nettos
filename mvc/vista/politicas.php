@@ -145,21 +145,41 @@
                                 <div class="main-section">
                                     <div class="container">
 
-                                        <div class="mweb">
+                                        <div class="mwebajuntando">
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <span ><img class="reduccion2 " src="images/25694.png"></span><br>
+
+                                                </div>
+                                                <div class="col-lg-4">
+
+                                                    <span><img class="reduccion2 " src="images/61073.png"></span>
+                                                </div>
+                                                <div class="col-lg-4">
+
+                                                    <span><img class="reduccion2 " src="images/1234.jpg"></span>
+                                                </div>
+
+
+                                            </div>
 
                                             <div class="row">
 
 
                                                 <div class="col-lg-4">
-                                                    <p><span><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=inicio" target=»_blank»>Inicio</a></p>
+
+                                                    <p class="espaciando"><span><i class="fas fa-angle-double-right"></i></span><a class="mapw " href="?pagina=inicio" target=»_blank»>Inicio</a></p>
+                                                    <p><span><i class="fas fa-angle-right"></i></span><a class="mapw" href="?pagina=busqueda" target=»_blank»>Busqueda</a></p>
                                                 </div>
                                                 <div class="col-lg-4">
 
-                                                    <p><span><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=notificaciones" target=»_blank»>Notificaciones</a></p>
+                                                    <p class="espaciando"><span><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=notificaciones" target=»_blank»>Notificaciones</a></p>
 
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <p><span><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=perfil" target=»_blank»>Perfil</a></p>
+
+                                                    <p class="espaciando"><i class="fas fa-angle-double-right"></i></span><a class="mapw" href="?pagina=perfil" target=»_blank»>Perfil</a></p>
                                                     <p><span><i class="fas fa-angle-right"></i></span><a class="mapw" href="?pagina=edicion" target=»_blank»>Editar Perfil</a></p>
                                                 </div>
 
