@@ -43,7 +43,7 @@ class mdlPerfil extends Singleton
 
         }
 
-        if (isset($_GET['id'])){
+        if (isset($_GET['id'])&&getGet('id')!=$_COOKIE['logged']){
 
             setcookie('idPerfil', getGet('id'), 0);
 
